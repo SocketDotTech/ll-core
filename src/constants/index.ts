@@ -8,11 +8,15 @@ export const constants = {
     Hyphen:'hyphen',
     Across: 'across',
     OptimismBridge: 'optimism-bridge',
-    Celer:'celer'
+    Celer:'celer',
+    refuel: 'refuel-bridge',
   },
   middleware: {
     OneInch: 'oneinch',
-    ZeroX: 'zerox'
+    ZeroX: 'zerox',
+    refuelOneInch:'refuel-oneinch',
+    refuelZeroX: 'refuel-zerox',
+    refuel: 'refuel',
   },
   chains: {
     GOERLI_CHAIN_ID: 5,
