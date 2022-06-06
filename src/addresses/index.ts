@@ -10,7 +10,8 @@ export const addresses: { [chainId: number]: Address } = {
       '0x852C5DE08b9beB014caD171C16B12a8D7456ea3f',
     [constants.bridges.AnySwapRouterV4]:
       '0x040993fbF458b95871Cd2D73Ee2E09F4AF6d56bB',
-    [constants.bridges.Hyphen]: '0x17A89B7372866a0155bF14980973Ad4408A3145C',
+    [constants.bridges.Hyphen]: '0x1Aba89fC7ff67D27ccaa51893c46FD1e5fEE924B',
+    [constants.bridges.Across]: '0x6D1e0220914f4fb73aF954694564e77024de3693',
     [constants.middleware.OneInch]:
       '0x2ddf16BA6d0180e5357d5e170eF1917a01b41fc0',
     [constants.bridges.OptimismBridge]:
@@ -35,7 +36,7 @@ export const addresses: { [chainId: number]: Address } = {
         isMiddleware: false,
       },
       [constants.bridges.Hyphen]: {
-        routeId: 10,
+        routeId: 12,
         isMiddleware: false,
       },
       [constants.middleware.OneInch]: {
@@ -50,6 +51,10 @@ export const addresses: { [chainId: number]: Address } = {
         routeId: 9,
         isMiddleware: false,
       },
+      [constants.bridges.Across]: {
+        routeId: 11,
+        isMiddleware: false,
+      }
     },
     chainInfo: {
       chainId: 1,
@@ -70,7 +75,7 @@ export const addresses: { [chainId: number]: Address } = {
     [constants.middleware.OneInch]:
       '0xd286595d2e3D879596FAB51f83A702D10a6db27b',
     [constants.bridges.Celer]: '0x06714dD1783C7Eb28c918156727bfD3aef8A4B8D',
-    [constants.bridges.Hyphen]: '0x3f367Bf9F7dcC55d97cF311b71Fb9F41e415531A',
+    [constants.bridges.Hyphen]: '0x663dc7E91157c58079f55C1BF5ee1BdB6401Ca7a',
     routeIds: {
       [constants.bridges.AnySwapRouterV4]: {
         routeId: 1,
@@ -85,7 +90,7 @@ export const addresses: { [chainId: number]: Address } = {
         isMiddleware: false,
       },
       [constants.bridges.Hyphen]: {
-        routeId: 5,
+        routeId: 6,
         isMiddleware: false,
       },
     },
@@ -125,7 +130,7 @@ export const addresses: { [chainId: number]: Address } = {
     registry: '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
     [constants.bridges.AnySwapRouterV4]:
       '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
-    [constants.bridges.Hyphen]: '0x1D6811553Aff8231aDd04A84F300b89E15D99EA4',
+    [constants.bridges.Hyphen]: '0xBD9f6198a220046E944D704b7ff2A68b778F4A44',
     [constants.middleware.OneInch]:
       '0xbDf50eAe568ECef74796ed6022a0d453e8432410',
     [constants.bridges.Celer]: '0xb584D4bE1A5470CA1a8778E9B86c81e165204599',
@@ -135,7 +140,7 @@ export const addresses: { [chainId: number]: Address } = {
         isMiddleware: false,
       },
       [constants.bridges.Hyphen]: {
-        routeId: 5,
+        routeId: 6,
         isMiddleware: false,
       },
       [constants.middleware.OneInch]: {
@@ -158,7 +163,7 @@ export const addresses: { [chainId: number]: Address } = {
     [constants.bridges.Hop]: '0xaa3d9fA3aB930aE635b001d00C612aa5b14d750e',
     [constants.middleware.OneInch]:
       '0xbDf50eAe568ECef74796ed6022a0d453e8432410',
-    [constants.bridges.Across]: '0x2ddf16ba6d0180e5357d5e170ef1917a01b41fc0',
+    [constants.bridges.Across]: '0xA7f7e4fE8E4cdDCD9969Bd3fbcFF67000CD7DE47',
     [constants.bridges.Celer]: '0xb584D4bE1A5470CA1a8778E9B86c81e165204599',
     routeIds: {
       [constants.bridges.Hop]: {
@@ -170,7 +175,7 @@ export const addresses: { [chainId: number]: Address } = {
         isMiddleware: true,
       },
       [constants.bridges.Across]: {
-        routeId: 5,
+        routeId: 7,
         isMiddleware: false,
       },
       [constants.bridges.Celer]: {
@@ -191,7 +196,7 @@ export const addresses: { [chainId: number]: Address } = {
       '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
     [constants.middleware.OneInch]:
       '0xaa3d9fA3aB930aE635b001d00C612aa5b14d750e',
-    [constants.bridges.Across]: '0xbeC6222b2Ff95735Ee83cA20dA9F190deAbA6489',
+    [constants.bridges.Across]: '0x0C0858290b6b268a93fB557af06390A3460c5dB6',
     [constants.bridges.Celer]: '0x3f367Bf9F7dcC55d97cF311b71Fb9F41e415531A',
     routeIds: {
       [constants.bridges.Hop]:  {
@@ -207,7 +212,7 @@ export const addresses: { [chainId: number]: Address } = {
       isMiddleware: true,
     },
       [constants.bridges.Across]:  {
-      routeId: 6,
+      routeId: 8,
       isMiddleware: false,
     },
       [constants.bridges.Celer]:  {
@@ -249,7 +254,8 @@ export const addresses: { [chainId: number]: Address } = {
     [constants.bridges.Hop]: '0x03027410f25c527d5aeb3e6e56a6389611dcb2a9',
     [constants.bridges.AnySwapRouterV4]:
       '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
-    [constants.bridges.Hyphen]: '0x64107EB9DC50E79Fb3977b9D6C927f9B9C5Bd218',
+    [constants.bridges.Hyphen]: '0x0fd9F11B9C54a9F100234EeEf9ee7873d73C2204',
+    [constants.bridges.Across]: '0xeb03440702bB6de23C63ad1c5A24598433F59F86',
     [constants.middleware.OneInch]:
       '0x2ddf16BA6d0180e5357d5e170eF1917a01b41fc0',
     [constants.bridges.Celer]: '0xe48AE3B68f0560d4aaA312E12fD687630C948561',
@@ -266,7 +272,7 @@ export const addresses: { [chainId: number]: Address } = {
       isMiddleware: false,
     },
       [constants.bridges.Hyphen]:  {
-      routeId: 9,
+      routeId: 14,
       isMiddleware: false,
     },
       [constants.middleware.OneInch]:  {
@@ -289,7 +295,10 @@ export const addresses: { [chainId: number]: Address } = {
       routeId: 12,
       isMiddleware: true,
     },
-
+    [constants.bridges.Across]: {
+      routeId: 13,
+      isMiddleware: false,
+    }
     },
     chainInfo: {
       chainId: 137,
