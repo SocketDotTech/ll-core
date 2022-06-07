@@ -1,0 +1,13 @@
+# ignore the .ts files
+*.ts
+
+# include the .d.ts files
+!*.d.ts
+
+!index.js
+!index.d.ts
+!index.d.ts.map
+!version.js
+!version.d.ts
+
+*.env

@@ -14,19 +14,19 @@ export const routes = Object.keys(addresses).reduce((routesObj: any, chainId: an
   .filter((x: any) => x.isMiddleware === true)
 
   routesObj[chainId] = {
-    bridgeIds: bridges.reduce((bridgeIds, bridge ) => {
+    bridgeNames: bridges.reduce((bridgeIds, bridge ) => {
       bridgeIds[bridge.routeId] = bridge.bridgeName
       return bridgeIds
     }, {}),
-    bridgeNames: bridges.reduce((bridgeNames, bridge ) => {
+    bridgeIds: bridges.reduce((bridgeNames, bridge ) => {
       bridgeNames[bridge.bridgeName] = bridge.routeId
       return bridgeNames
     }, {}),
-    middlewareIds: middlewares.reduce((middlewareIds, middleware ) => {
+    middlewareNames: middlewares.reduce((middlewareIds, middleware ) => {
       middlewareIds[middleware.routeId] = middleware.middlewareName
       return middlewareIds
     }, {}),
-    middlewareNames: middlewares.reduce((middlewareNames, middleware ) => {
+    middlewareIds: middlewares.reduce((middlewareNames, middleware ) => {
       middlewareNames[middleware.middlewareName] = middleware.routeId
       return middlewareNames
     }, {})
