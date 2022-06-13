@@ -261,7 +261,7 @@ export const addresses: { [chainId: number]: Address } = {
     [constants.bridges.Celer]: '0x14aC5b3580dD1e546CD7287Cd1faDba9A8736628',
     [constants.bridges.refuel]: '0xcc3ef7f9df10a5f177c30becd4aaa33f42d5bd57',
     [constants.middleware.refuelOneInch]: '0x4C9faD010D8be90Aba505c85eacc483dFf9b8Fa9',
-    [constants.middleware.refuel]: '0x09217a4a727418a7a9fc60ae07e31c2dfd13bf2f',
+    [constants.middleware.refuel]: '0x602029526b76c5116957aa360472b1141314ab7f',
     routeIds: {
       [constants.bridges.Hop]:  {
       routeId: 7,
@@ -292,7 +292,7 @@ export const addresses: { [chainId: number]: Address } = {
       isMiddleware: true,
     },
     [constants.middleware.refuel]:  {
-      routeId: 12,
+      routeId: 18,
       isMiddleware: true,
     },
     [constants.bridges.Across]: {
