@@ -17,6 +17,10 @@ export const addresses: { [chainId: number]: Address } = {
     [constants.bridges.OptimismBridge]:
       '0xA7f7e4fE8E4cdDCD9969Bd3fbcFF67000CD7DE47',
     [constants.bridges.Celer]: '0x47E136cf4A96e1afa72e19022f9699Bbaa1BE60e',
+    [constants.bridges.refuel]: '0xe48AE3B68f0560d4aaA312E12fD687630C948561',
+    [constants.middleware.refuelOneInch]:
+      '0x87225Ec2C6d8ee8293E8F5667077d699eC2FB6Db',
+    [constants.middleware.refuel]: '0xa1Cc84A788A8405369E49781Ca151bDeDbB5b47C',
 
     routeIds: {
       [constants.bridges.Hop]: {
@@ -54,6 +58,18 @@ export const addresses: { [chainId: number]: Address } = {
       [constants.bridges.Across]: {
         routeId: 11,
         isMiddleware: false,
+      },
+      [constants.bridges.refuel]: {
+        routeId: 14,
+        isMiddleware: false,
+      },
+      [constants.middleware.refuelOneInch]: {
+        routeId: 15,
+        isMiddleware: true,
+      },
+      [constants.middleware.refuel]: {
+        routeId: 16,
+        isMiddleware: true,
       },
     },
     chainInfo: {
@@ -166,6 +182,10 @@ export const addresses: { [chainId: number]: Address } = {
     [constants.middleware.OneInch]:
       '0xbDf50eAe568ECef74796ed6022a0d453e8432410',
     [constants.bridges.Celer]: '0xA7f7e4fE8E4cdDCD9969Bd3fbcFF67000CD7DE47',
+    [constants.bridges.refuel]: '0xDC23842d47b80D88A549777eB1F33C2F47f253D0',
+    [constants.middleware.refuelOneInch]:
+      '0x6086c6451217241D8e42e134733A542095E13c47',
+    [constants.middleware.refuel]: '0x957301825Dc21d4A92919C9E72dC9E6C6a29e7f8',
     routeIds: {
       [constants.bridges.AnySwapRouterV4]: {
         routeId: 1,
@@ -182,6 +202,18 @@ export const addresses: { [chainId: number]: Address } = {
       [constants.bridges.Celer]: {
         routeId: 7,
         isMiddleware: false,
+      },
+      [constants.bridges.refuel]: {
+        routeId: 8,
+        isMiddleware: false,
+      },
+      [constants.middleware.refuelOneInch]: {
+        routeId: 9,
+        isMiddleware: true,
+      },
+      [constants.middleware.refuel]: {
+        routeId: 10,
+        isMiddleware: true,
       },
     },
     chainInfo: {
@@ -393,10 +425,20 @@ export const addresses: { [chainId: number]: Address } = {
   1313161554: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
     [constants.bridges.Celer]: '0x5800249621DA520aDFdCa16da20d8A5Fc0f814d8',
+    [constants.bridges.refuel]: '0xF51e426240E1C0b63dC7F7ec8b172376487329E3',
+    [constants.middleware.refuel]: '0x7050b6f947BA48508219Ac02EC152E9f198ADc5e',
     routeIds: {
       [constants.bridges.Celer]: {
         routeId: 2,
         isMiddleware: false,
+      },
+      [constants.bridges.refuel]: {
+        routeId: 3,
+        isMiddleware: false,
+      },
+      [constants.middleware.refuel]: {
+        routeId: 4,
+        isMiddleware: true,
       },
     },
     chainInfo: {
