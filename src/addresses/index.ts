@@ -17,6 +17,10 @@ export const addresses: { [chainId: number]: Address } = {
     [constants.bridges.OptimismBridge]:
       '0xA7f7e4fE8E4cdDCD9969Bd3fbcFF67000CD7DE47',
     [constants.bridges.Celer]: '0x47E136cf4A96e1afa72e19022f9699Bbaa1BE60e',
+    [constants.bridges.refuel]: '0xe48AE3B68f0560d4aaA312E12fD687630C948561',
+    [constants.middleware.refuelOneInch]:
+      '0x87225Ec2C6d8ee8293E8F5667077d699eC2FB6Db',
+    [constants.middleware.refuel]: '0xa1Cc84A788A8405369E49781Ca151bDeDbB5b47C',
 
     routeIds: {
       [constants.bridges.Hop]: {
@@ -54,7 +58,19 @@ export const addresses: { [chainId: number]: Address } = {
       [constants.bridges.Across]: {
         routeId: 11,
         isMiddleware: false,
-      }
+      },
+      [constants.bridges.refuel]: {
+        routeId: 14,
+        isMiddleware: false,
+      },
+      [constants.middleware.refuelOneInch]: {
+        routeId: 15,
+        isMiddleware: true,
+      },
+      [constants.middleware.refuel]: {
+        routeId: 16,
+        isMiddleware: true,
+      },
     },
     chainInfo: {
       chainId: 1,
@@ -76,6 +92,10 @@ export const addresses: { [chainId: number]: Address } = {
       '0xd286595d2e3D879596FAB51f83A702D10a6db27b',
     [constants.bridges.Celer]: '0xdA089249ccE9d9726Fa6b755c5ec3d9C260C90C2',
     [constants.bridges.Hyphen]: '0x663dc7E91157c58079f55C1BF5ee1BdB6401Ca7a',
+    [constants.bridges.refuel]: '0x807B2e8724cDf346c87EEFF4E309bbFCb8681eC1',
+    [constants.middleware.refuelOneInch]:
+      '0x0C0858290b6b268a93fB557af06390A3460c5dB6',
+    [constants.middleware.refuel]: '0x0Aa26a14C2559319F9dEf7304E93db5aE6b32fb9',
     routeIds: {
       [constants.bridges.AnySwapRouterV4]: {
         routeId: 1,
@@ -93,6 +113,18 @@ export const addresses: { [chainId: number]: Address } = {
         routeId: 6,
         isMiddleware: false,
       },
+      [constants.bridges.refuel]: {
+        routeId: 8,
+        isMiddleware: false,
+      },
+      [constants.middleware.refuelOneInch]: {
+        routeId: 9,
+        isMiddleware: true,
+      },
+      [constants.middleware.refuel]: {
+        routeId: 10,
+        isMiddleware: true,
+      },
     },
     chainInfo: {
       chainId: 56,
@@ -106,6 +138,10 @@ export const addresses: { [chainId: number]: Address } = {
       '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
     [constants.middleware.ZeroX]: '0xA7649aa944b7Dce781859C18913c2Dc8A97f03e4',
     [constants.bridges.Celer]: '0xb584D4bE1A5470CA1a8778E9B86c81e165204599',
+    [constants.bridges.refuel]: '0x1D6811553Aff8231aDd04A84F300b89E15D99EA4',
+    [constants.middleware.refuelZeroX]:
+      '0xBD9f6198a220046E944D704b7ff2A68b778F4A44',
+    [constants.middleware.refuel]: '0xA7f7e4fE8E4cdDCD9969Bd3fbcFF67000CD7DE47',
     routeIds: {
       [constants.bridges.AnySwapRouterV4]: {
         routeId: 1,
@@ -118,6 +154,18 @@ export const addresses: { [chainId: number]: Address } = {
       [constants.bridges.Celer]: {
         routeId: 5,
         isMiddleware: false,
+      },
+      [constants.bridges.refuel]: {
+        routeId: 6,
+        isMiddleware: false,
+      },
+      [constants.middleware.refuelZeroX]: {
+        routeId: 7,
+        isMiddleware: true,
+      },
+      [constants.middleware.refuel]: {
+        routeId: 8,
+        isMiddleware: true,
       },
     },
     chainInfo: {
@@ -134,6 +182,10 @@ export const addresses: { [chainId: number]: Address } = {
     [constants.middleware.OneInch]:
       '0xbDf50eAe568ECef74796ed6022a0d453e8432410',
     [constants.bridges.Celer]: '0xA7f7e4fE8E4cdDCD9969Bd3fbcFF67000CD7DE47',
+    [constants.bridges.refuel]: '0xDC23842d47b80D88A549777eB1F33C2F47f253D0',
+    [constants.middleware.refuelOneInch]:
+      '0x6086c6451217241D8e42e134733A542095E13c47',
+    [constants.middleware.refuel]: '0x957301825Dc21d4A92919C9E72dC9E6C6a29e7f8',
     routeIds: {
       [constants.bridges.AnySwapRouterV4]: {
         routeId: 1,
@@ -151,6 +203,18 @@ export const addresses: { [chainId: number]: Address } = {
         routeId: 7,
         isMiddleware: false,
       },
+      [constants.bridges.refuel]: {
+        routeId: 8,
+        isMiddleware: false,
+      },
+      [constants.middleware.refuelOneInch]: {
+        routeId: 9,
+        isMiddleware: true,
+      },
+      [constants.middleware.refuel]: {
+        routeId: 10,
+        isMiddleware: true,
+      },
     },
     chainInfo: {
       chainId: 43114,
@@ -165,6 +229,10 @@ export const addresses: { [chainId: number]: Address } = {
       '0xbDf50eAe568ECef74796ed6022a0d453e8432410',
     [constants.bridges.Across]: '0xA7f7e4fE8E4cdDCD9969Bd3fbcFF67000CD7DE47',
     [constants.bridges.Celer]: '0xb8c32878c69F4cC4705D0Bd99bca082C4eEFd76D',
+    [constants.bridges.refuel]: '0x47E136cf4A96e1afa72e19022f9699Bbaa1BE60e',
+    [constants.middleware.refuelOneInch]:
+      '0x1d43076909Ca139BFaC4EbB7194518bE3638fc76',
+    [constants.middleware.refuel]: '0x0f933F6a58D885586d356d6677DC87995bdC1B51',
     routeIds: {
       [constants.bridges.Hop]: {
         routeId: 4,
@@ -182,6 +250,19 @@ export const addresses: { [chainId: number]: Address } = {
         routeId: 8,
         isMiddleware: false,
       },
+
+      [constants.bridges.refuel]: {
+        routeId: 9,
+        isMiddleware: false,
+      },
+      [constants.middleware.refuelOneInch]: {
+        routeId: 10,
+        isMiddleware: true,
+      },
+      [constants.middleware.refuel]: {
+        routeId: 11,
+        isMiddleware: true,
+      },
     },
     chainInfo: {
       chainId: 10,
@@ -198,27 +279,43 @@ export const addresses: { [chainId: number]: Address } = {
       '0xaa3d9fA3aB930aE635b001d00C612aa5b14d750e',
     [constants.bridges.Across]: '0x0C0858290b6b268a93fB557af06390A3460c5dB6',
     [constants.bridges.Celer]: '0x0Aa26a14C2559319F9dEf7304E93db5aE6b32fb9',
+    [constants.bridges.refuel]: '0x7340798B75185849440c11FE09C5E6b494344F5C',
+    [constants.middleware.refuelOneInch]:
+      '0xdcABb6d7E88396498FFF4CD987F60e354BF2a44b',
+    [constants.middleware.refuel]: '0x23ddd3beC944cdB16Cacf3039e389324Df598B89',
     routeIds: {
-      [constants.bridges.Hop]:  {
-      routeId: 5,
-      isMiddleware: false,
-    },
-      [constants.bridges.AnySwapRouterV4]:  {
-      routeId: 2,
-      isMiddleware: false,
-    },
-      [constants.middleware.OneInch]:  {
-      routeId: 4,
-      isMiddleware: true,
-    },
-      [constants.bridges.Across]:  {
-      routeId: 8,
-      isMiddleware: false,
-    },
-      [constants.bridges.Celer]:  {
-      routeId: 9,
-      isMiddleware: false,
-    },
+      [constants.bridges.Hop]: {
+        routeId: 5,
+        isMiddleware: false,
+      },
+      [constants.bridges.AnySwapRouterV4]: {
+        routeId: 2,
+        isMiddleware: false,
+      },
+      [constants.middleware.OneInch]: {
+        routeId: 4,
+        isMiddleware: true,
+      },
+      [constants.bridges.Across]: {
+        routeId: 8,
+        isMiddleware: false,
+      },
+      [constants.bridges.Celer]: {
+        routeId: 9,
+        isMiddleware: false,
+      },
+      [constants.bridges.refuel]: {
+        routeId: 10,
+        isMiddleware: false,
+      },
+      [constants.middleware.refuelOneInch]: {
+        routeId: 11,
+        isMiddleware: true,
+      },
+      [constants.middleware.refuel]: {
+        routeId: 12,
+        isMiddleware: true,
+      },
     },
     chainInfo: {
       chainId: 42161,
@@ -232,15 +329,32 @@ export const addresses: { [chainId: number]: Address } = {
     [constants.bridges.Hop]: '0x852C5DE08b9beB014caD171C16B12a8D7456ea3f',
     [constants.middleware.OneInch]:
       '0x565810cbfa3Cf1390963E5aFa2fB953795686339',
+    [constants.bridges.refuel]: '0x7050b6f947BA48508219Ac02EC152E9f198ADc5e',
+    [constants.middleware.refuelOneInch]:
+      '0x2a1094b6585b32FE33929cDdF7Ee3F5a1c1E163A',
+    [constants.middleware.refuel]: '0xD9e492C3899aC768F67aD9AdC0Ce88aAB5463f60',
     routeIds: {
-      [constants.bridges.Hop]:  {
-      routeId: 4,
-      isMiddleware: false,
-    },
-      [constants.middleware.OneInch]:  {
-      routeId: 2,
-      isMiddleware: true,
-    },
+      [constants.bridges.Hop]: {
+        routeId: 4,
+        isMiddleware: false,
+      },
+      [constants.middleware.OneInch]: {
+        routeId: 2,
+        isMiddleware: true,
+      },
+
+      [constants.bridges.refuel]: {
+        routeId: 5,
+        isMiddleware: false,
+      },
+      [constants.middleware.refuelOneInch]: {
+        routeId: 6,
+        isMiddleware: true,
+      },
+      [constants.middleware.refuel]: {
+        routeId: 7,
+        isMiddleware: true,
+      },
     },
     chainInfo: {
       chainId: 100,
@@ -260,45 +374,46 @@ export const addresses: { [chainId: number]: Address } = {
       '0x2ddf16BA6d0180e5357d5e170eF1917a01b41fc0',
     [constants.bridges.Celer]: '0x14aC5b3580dD1e546CD7287Cd1faDba9A8736628',
     [constants.bridges.refuel]: '0xcc3ef7f9df10a5f177c30becd4aaa33f42d5bd57',
-    [constants.middleware.refuelOneInch]: '0x4C9faD010D8be90Aba505c85eacc483dFf9b8Fa9',
+    [constants.middleware.refuelOneInch]:
+      '0x4C9faD010D8be90Aba505c85eacc483dFf9b8Fa9',
     [constants.middleware.refuel]: '0x602029526b76c5116957aa360472b1141314ab7f',
     routeIds: {
-      [constants.bridges.Hop]:  {
-      routeId: 7,
-      isMiddleware: false,
-    },
-      [constants.bridges.AnySwapRouterV4]:  {
-      routeId: 2,
-      isMiddleware: false,
-    },
-      [constants.bridges.Hyphen]:  {
-      routeId: 14,
-      isMiddleware: false,
-    },
-      [constants.middleware.OneInch]:  {
-      routeId: 5,
-      isMiddleware: true,
-    },
-      [constants.bridges.Celer]:  {
-      routeId: 17,
-      isMiddleware: false,
-    },
-    [constants.bridges.refuel]:  {
-      routeId: 10,
-      isMiddleware: false,
-    },
-    [constants.middleware.refuelOneInch]:  {
-      routeId: 15,
-      isMiddleware: true,
-    },
-    [constants.middleware.refuel]:  {
-      routeId: 18,
-      isMiddleware: true,
-    },
-    [constants.bridges.Across]: {
-      routeId: 13,
-      isMiddleware: false,
-    }
+      [constants.bridges.Hop]: {
+        routeId: 7,
+        isMiddleware: false,
+      },
+      [constants.bridges.AnySwapRouterV4]: {
+        routeId: 2,
+        isMiddleware: false,
+      },
+      [constants.bridges.Hyphen]: {
+        routeId: 14,
+        isMiddleware: false,
+      },
+      [constants.middleware.OneInch]: {
+        routeId: 5,
+        isMiddleware: true,
+      },
+      [constants.bridges.Celer]: {
+        routeId: 17,
+        isMiddleware: false,
+      },
+      [constants.bridges.refuel]: {
+        routeId: 10,
+        isMiddleware: false,
+      },
+      [constants.middleware.refuelOneInch]: {
+        routeId: 15,
+        isMiddleware: true,
+      },
+      [constants.middleware.refuel]: {
+        routeId: 18,
+        isMiddleware: true,
+      },
+      [constants.bridges.Across]: {
+        routeId: 13,
+        isMiddleware: false,
+      },
     },
     chainInfo: {
       chainId: 137,
@@ -310,10 +425,20 @@ export const addresses: { [chainId: number]: Address } = {
   1313161554: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
     [constants.bridges.Celer]: '0x5800249621DA520aDFdCa16da20d8A5Fc0f814d8',
+    [constants.bridges.refuel]: '0xF51e426240E1C0b63dC7F7ec8b172376487329E3',
+    [constants.middleware.refuel]: '0x7050b6f947BA48508219Ac02EC152E9f198ADc5e',
     routeIds: {
-      [constants.bridges.Celer]:  {
+      [constants.bridges.Celer]: {
         routeId: 2,
         isMiddleware: false,
+      },
+      [constants.bridges.refuel]: {
+        routeId: 3,
+        isMiddleware: false,
+      },
+      [constants.middleware.refuel]: {
+        routeId: 4,
+        isMiddleware: true,
       },
     },
     chainInfo: {
