@@ -1,9 +1,9 @@
 import { ChainId, Bridge, Middleware } from '../constants/types';
 import { Address } from './type';
 export const addresses: {
-  [chainId in ChainId]?: Address;
+  [chainId: number]: Address;
 } = {
-  1: {
+  [ChainId.MAINNET_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
     [Bridge.Hop]: '0xd286595d2e3D879596FAB51f83A702D10a6db27b',
     [Bridge.PolygonBridge]: '0xa7649aa944b7dce781859c18913c2dc8a97f03e4',
@@ -80,7 +80,7 @@ export const addresses: {
     },
   },
 
-  56: {
+  [ChainId.BSC_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
     [Bridge.AnySwapRouterV4]: '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
     [Middleware.OneInch]: '0xd286595d2e3D879596FAB51f83A702D10a6db27b',
@@ -125,7 +125,7 @@ export const addresses: {
       isL1: false,
     },
   },
-  250: {
+  [ChainId.FANTOM_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
     [Bridge.AnySwapRouterV4]: '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
     [Middleware.ZeroX]: '0xA7649aa944b7Dce781859C18913c2Dc8A97f03e4',
@@ -165,7 +165,7 @@ export const addresses: {
       isL1: false,
     },
   },
-  43114: {
+  [ChainId.AVAX_CHAIN_ID]: {
     registry: '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
     [Bridge.AnySwapRouterV4]: '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
     [Bridge.Hyphen]: '0xBD9f6198a220046E944D704b7ff2A68b778F4A44',
@@ -210,7 +210,7 @@ export const addresses: {
       isL1: false,
     },
   },
-  10: {
+  [ChainId.OPTIMISM_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
     [Bridge.Hop]: '0xaa3d9fA3aB930aE635b001d00C612aa5b14d750e',
     [Middleware.OneInch]: '0xbDf50eAe568ECef74796ed6022a0d453e8432410',
@@ -256,7 +256,7 @@ export const addresses: {
       isL1: false,
     },
   },
-  42161: {
+  [ChainId.ARBITRUM_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
     [Bridge.Hop]: '0x040993fbF458b95871Cd2D73Ee2E09F4AF6d56bB',
     [Bridge.AnySwapRouterV4]: '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
@@ -307,7 +307,7 @@ export const addresses: {
     },
   },
 
-  100: {
+  [ChainId.XDAI_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
     [Bridge.Hop]: '0x852C5DE08b9beB014caD171C16B12a8D7456ea3f',
     [Middleware.OneInch]: '0x565810cbfa3Cf1390963E5aFa2fB953795686339',
@@ -344,7 +344,7 @@ export const addresses: {
     },
   },
 
-  137: {
+  [ChainId.POLYGON_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
     [Bridge.Hop]: '0x03027410f25c527d5aeb3e6e56a6389611dcb2a9',
     [Bridge.AnySwapRouterV4]: '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
@@ -400,7 +400,7 @@ export const addresses: {
     },
   },
 
-  1313161554: {
+  [ChainId.AURORA_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
     [Bridge.Celer]: '0x5800249621DA520aDFdCa16da20d8A5Fc0f814d8',
     [Bridge.refuel]: '0xF51e426240E1C0b63dC7F7ec8b172376487329E3',
