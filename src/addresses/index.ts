@@ -16,7 +16,7 @@ export const addresses: { [chainId: number]: Address } = {
       '0x2ddf16BA6d0180e5357d5e170eF1917a01b41fc0',
     [constants.bridges.OptimismBridge]:
       '0xA7f7e4fE8E4cdDCD9969Bd3fbcFF67000CD7DE47',
-    [constants.bridges.Celer]: '0x47E136cf4A96e1afa72e19022f9699Bbaa1BE60e',
+    [constants.bridges.Celer]: '0xB6fb3062405985F700fa23758A3053162ddBeFb9',
     [constants.bridges.refuel]: '0xe48AE3B68f0560d4aaA312E12fD687630C948561',
     [constants.middleware.refuelOneInch]:
       '0x87225Ec2C6d8ee8293E8F5667077d699eC2FB6Db',
@@ -52,7 +52,7 @@ export const addresses: { [chainId: number]: Address } = {
         isMiddleware: false,
       },
       [constants.bridges.Celer]: {
-        routeId: 13,
+        routeId: 17,
         isMiddleware: false,
       },
       [constants.bridges.Across]: {
@@ -90,7 +90,7 @@ export const addresses: { [chainId: number]: Address } = {
       '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
     [constants.middleware.OneInch]:
       '0xd286595d2e3D879596FAB51f83A702D10a6db27b',
-    [constants.bridges.Celer]: '0xdA089249ccE9d9726Fa6b755c5ec3d9C260C90C2',
+    [constants.bridges.Celer]: '0x031c67Ee65e508E96c184Fc8D8559B50CedeBaa9',
     [constants.bridges.Hyphen]: '0x663dc7E91157c58079f55C1BF5ee1BdB6401Ca7a',
     [constants.bridges.refuel]: '0x807B2e8724cDf346c87EEFF4E309bbFCb8681eC1',
     [constants.middleware.refuelOneInch]:
@@ -106,7 +106,7 @@ export const addresses: { [chainId: number]: Address } = {
         isMiddleware: true,
       },
       [constants.bridges.Celer]: {
-        routeId: 7,
+        routeId: 11,
         isMiddleware: false,
       },
       [constants.bridges.Hyphen]: {
@@ -137,7 +137,7 @@ export const addresses: { [chainId: number]: Address } = {
     [constants.bridges.AnySwapRouterV4]:
       '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
     [constants.middleware.ZeroX]: '0xA7649aa944b7Dce781859C18913c2Dc8A97f03e4',
-    [constants.bridges.Celer]: '0xb584D4bE1A5470CA1a8778E9B86c81e165204599',
+    [constants.bridges.Celer]: '0x6086c6451217241D8e42e134733A542095E13c47',
     [constants.bridges.refuel]: '0x1D6811553Aff8231aDd04A84F300b89E15D99EA4',
     [constants.middleware.refuelZeroX]:
       '0xBD9f6198a220046E944D704b7ff2A68b778F4A44',
@@ -152,7 +152,7 @@ export const addresses: { [chainId: number]: Address } = {
         isMiddleware: true,
       },
       [constants.bridges.Celer]: {
-        routeId: 5,
+        routeId: 9,
         isMiddleware: false,
       },
       [constants.bridges.refuel]: {
@@ -181,7 +181,7 @@ export const addresses: { [chainId: number]: Address } = {
     [constants.bridges.Hyphen]: '0xBD9f6198a220046E944D704b7ff2A68b778F4A44',
     [constants.middleware.OneInch]:
       '0xbDf50eAe568ECef74796ed6022a0d453e8432410',
-    [constants.bridges.Celer]: '0xA7f7e4fE8E4cdDCD9969Bd3fbcFF67000CD7DE47',
+    [constants.bridges.Celer]: '0x9ca48cAF8AD2B081a0b633d6FCD803076F719fEa',
     [constants.bridges.refuel]: '0xDC23842d47b80D88A549777eB1F33C2F47f253D0',
     [constants.middleware.refuelOneInch]:
       '0x6086c6451217241D8e42e134733A542095E13c47',
@@ -200,7 +200,7 @@ export const addresses: { [chainId: number]: Address } = {
         isMiddleware: true,
       },
       [constants.bridges.Celer]: {
-        routeId: 7,
+        routeId: 11,
         isMiddleware: false,
       },
       [constants.bridges.refuel]: {
@@ -228,7 +228,7 @@ export const addresses: { [chainId: number]: Address } = {
     [constants.middleware.OneInch]:
       '0xbDf50eAe568ECef74796ed6022a0d453e8432410',
     [constants.bridges.Across]: '0xA7f7e4fE8E4cdDCD9969Bd3fbcFF67000CD7DE47',
-    [constants.bridges.Celer]: '0xb8c32878c69F4cC4705D0Bd99bca082C4eEFd76D',
+    [constants.bridges.Celer]: '0x0C0858290b6b268a93fB557af06390A3460c5dB6',
     [constants.bridges.refuel]: '0x47E136cf4A96e1afa72e19022f9699Bbaa1BE60e',
     [constants.middleware.refuelOneInch]:
       '0x1d43076909Ca139BFaC4EbB7194518bE3638fc76',
@@ -247,7 +247,7 @@ export const addresses: { [chainId: number]: Address } = {
         isMiddleware: false,
       },
       [constants.bridges.Celer]: {
-        routeId: 8,
+        routeId: 13,
         isMiddleware: false,
       },
 
@@ -278,7 +278,7 @@ export const addresses: { [chainId: number]: Address } = {
     [constants.middleware.OneInch]:
       '0xaa3d9fA3aB930aE635b001d00C612aa5b14d750e',
     [constants.bridges.Across]: '0x0C0858290b6b268a93fB557af06390A3460c5dB6',
-    [constants.bridges.Celer]: '0x0Aa26a14C2559319F9dEf7304E93db5aE6b32fb9',
+    [constants.bridges.Celer]: '0x9216253925d1A22CB375EcEf4f33cf93a1D1ff4D',
     [constants.bridges.refuel]: '0x7340798B75185849440c11FE09C5E6b494344F5C',
     [constants.middleware.refuelOneInch]:
       '0xdcABb6d7E88396498FFF4CD987F60e354BF2a44b',
@@ -301,7 +301,7 @@ export const addresses: { [chainId: number]: Address } = {
         isMiddleware: false,
       },
       [constants.bridges.Celer]: {
-        routeId: 9,
+        routeId: 14,
         isMiddleware: false,
       },
       [constants.bridges.refuel]: {
@@ -372,7 +372,7 @@ export const addresses: { [chainId: number]: Address } = {
     [constants.bridges.Across]: '0xeb03440702bB6de23C63ad1c5A24598433F59F86',
     [constants.middleware.OneInch]:
       '0x2ddf16BA6d0180e5357d5e170eF1917a01b41fc0',
-    [constants.bridges.Celer]: '0x14aC5b3580dD1e546CD7287Cd1faDba9A8736628',
+    [constants.bridges.Celer]: '0xb48b743b85Bf955c4c039599A3eCdD6175B6787f',
     [constants.bridges.refuel]: '0xcc3ef7f9df10a5f177c30becd4aaa33f42d5bd57',
     [constants.middleware.refuelOneInch]:
       '0x4C9faD010D8be90Aba505c85eacc483dFf9b8Fa9',
@@ -395,7 +395,7 @@ export const addresses: { [chainId: number]: Address } = {
         isMiddleware: true,
       },
       [constants.bridges.Celer]: {
-        routeId: 17,
+        routeId: 20,
         isMiddleware: false,
       },
       [constants.bridges.refuel]: {
@@ -424,12 +424,12 @@ export const addresses: { [chainId: number]: Address } = {
 
   1313161554: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
-    [constants.bridges.Celer]: '0x5800249621DA520aDFdCa16da20d8A5Fc0f814d8',
+    [constants.bridges.Celer]: '0xBD9f6198a220046E944D704b7ff2A68b778F4A44',
     [constants.bridges.refuel]: '0xF51e426240E1C0b63dC7F7ec8b172376487329E3',
     [constants.middleware.refuel]: '0x7050b6f947BA48508219Ac02EC152E9f198ADc5e',
     routeIds: {
       [constants.bridges.Celer]: {
-        routeId: 2,
+        routeId: 5,
         isMiddleware: false,
       },
       [constants.bridges.refuel]: {
