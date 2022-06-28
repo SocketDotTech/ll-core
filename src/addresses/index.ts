@@ -1,73 +1,69 @@
-import { constants } from '../constants'
-import { Address } from './type'
-export const addresses: { [chainId: number]: Address } = {
-  1: {
+import { ChainId, Bridge, Middleware } from '../constants/types';
+import { Address } from './type';
+export const addresses: {
+  [chainId: number]: Address;
+} = {
+  [ChainId.MAINNET_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
-    [constants.bridges.Hop]: '0xd286595d2e3D879596FAB51f83A702D10a6db27b',
-    [constants.bridges.PolygonBridge]:
-      '0xa7649aa944b7dce781859c18913c2dc8a97f03e4',
-    [constants.bridges.ArbitrumBridge]:
-      '0x852C5DE08b9beB014caD171C16B12a8D7456ea3f',
-    [constants.bridges.AnySwapRouterV4]:
-      '0x040993fbF458b95871Cd2D73Ee2E09F4AF6d56bB',
-    [constants.bridges.Hyphen]: '0x1Aba89fC7ff67D27ccaa51893c46FD1e5fEE924B',
-    [constants.bridges.Across]: '0x6D1e0220914f4fb73aF954694564e77024de3693',
-    [constants.middleware.OneInch]:
-      '0x2ddf16BA6d0180e5357d5e170eF1917a01b41fc0',
-    [constants.bridges.OptimismBridge]:
-      '0xA7f7e4fE8E4cdDCD9969Bd3fbcFF67000CD7DE47',
-    [constants.bridges.Celer]: '0xB6fb3062405985F700fa23758A3053162ddBeFb9',
-    [constants.bridges.refuel]: '0xe48AE3B68f0560d4aaA312E12fD687630C948561',
-    [constants.middleware.refuelOneInch]:
-      '0x87225Ec2C6d8ee8293E8F5667077d699eC2FB6Db',
-    [constants.middleware.refuel]: '0xa1Cc84A788A8405369E49781Ca151bDeDbB5b47C',
+    [Bridge.Hop]: '0xd286595d2e3D879596FAB51f83A702D10a6db27b',
+    [Bridge.PolygonBridge]: '0xa7649aa944b7dce781859c18913c2dc8a97f03e4',
+    [Bridge.ArbitrumBridge]: '0x852C5DE08b9beB014caD171C16B12a8D7456ea3f',
+    [Bridge.AnySwapRouterV4]: '0x040993fbF458b95871Cd2D73Ee2E09F4AF6d56bB',
+    [Bridge.Hyphen]: '0x1Aba89fC7ff67D27ccaa51893c46FD1e5fEE924B',
+    [Bridge.Across]: '0x6D1e0220914f4fb73aF954694564e77024de3693',
+    [Middleware.OneInch]: '0x2ddf16BA6d0180e5357d5e170eF1917a01b41fc0',
+    [Bridge.OptimismBridge]: '0xA7f7e4fE8E4cdDCD9969Bd3fbcFF67000CD7DE47',
+    [Bridge.Celer]: '0xB6fb3062405985F700fa23758A3053162ddBeFb9',
+    [Bridge.refuel]: '0xe48AE3B68f0560d4aaA312E12fD687630C948561',
+    [Middleware.refuelOneInch]: '0x87225Ec2C6d8ee8293E8F5667077d699eC2FB6Db',
+    [Middleware.refuel]: '0xa1Cc84A788A8405369E49781Ca151bDeDbB5b47C',
 
     routeIds: {
-      [constants.bridges.Hop]: {
+      [Bridge.Hop]: {
         routeId: 1,
         isMiddleware: false,
       },
-      [constants.bridges.PolygonBridge]: {
+      [Bridge.PolygonBridge]: {
         routeId: 2,
         isMiddleware: false,
       },
-      [constants.bridges.ArbitrumBridge]: {
+      [Bridge.ArbitrumBridge]: {
         routeId: 3,
         isMiddleware: false,
       },
-      [constants.bridges.AnySwapRouterV4]: {
+      [Bridge.AnySwapRouterV4]: {
         routeId: 4,
         isMiddleware: false,
       },
-      [constants.bridges.Hyphen]: {
+      [Bridge.Hyphen]: {
         routeId: 12,
         isMiddleware: false,
       },
-      [constants.middleware.OneInch]: {
+      [Middleware.OneInch]: {
         routeId: 7,
         isMiddleware: true,
       },
-      [constants.bridges.OptimismBridge]: {
+      [Bridge.OptimismBridge]: {
         routeId: 8,
         isMiddleware: false,
       },
-      [constants.bridges.Celer]: {
+      [Bridge.Celer]: {
         routeId: 17,
         isMiddleware: false,
       },
-      [constants.bridges.Across]: {
+      [Bridge.Across]: {
         routeId: 11,
         isMiddleware: false,
       },
-      [constants.bridges.refuel]: {
+      [Bridge.refuel]: {
         routeId: 14,
         isMiddleware: false,
       },
-      [constants.middleware.refuelOneInch]: {
+      [Middleware.refuelOneInch]: {
         routeId: 15,
         isMiddleware: true,
       },
-      [constants.middleware.refuel]: {
+      [Middleware.refuel]: {
         routeId: 16,
         isMiddleware: true,
       },
@@ -84,44 +80,41 @@ export const addresses: { [chainId: number]: Address } = {
     },
   },
 
-  56: {
+  [ChainId.BSC_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
-    [constants.bridges.AnySwapRouterV4]:
-      '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
-    [constants.middleware.OneInch]:
-      '0xd286595d2e3D879596FAB51f83A702D10a6db27b',
-    [constants.bridges.Celer]: '0x031c67Ee65e508E96c184Fc8D8559B50CedeBaa9',
-    [constants.bridges.Hyphen]: '0x663dc7E91157c58079f55C1BF5ee1BdB6401Ca7a',
-    [constants.bridges.refuel]: '0x807B2e8724cDf346c87EEFF4E309bbFCb8681eC1',
-    [constants.middleware.refuelOneInch]:
-      '0x0C0858290b6b268a93fB557af06390A3460c5dB6',
-    [constants.middleware.refuel]: '0x0Aa26a14C2559319F9dEf7304E93db5aE6b32fb9',
+    [Bridge.AnySwapRouterV4]: '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
+    [Middleware.OneInch]: '0xd286595d2e3D879596FAB51f83A702D10a6db27b',
+    [Bridge.Celer]: '0x031c67Ee65e508E96c184Fc8D8559B50CedeBaa9',
+    [Bridge.Hyphen]: '0x663dc7E91157c58079f55C1BF5ee1BdB6401Ca7a',
+    [Bridge.refuel]: '0x807B2e8724cDf346c87EEFF4E309bbFCb8681eC1',
+    [Middleware.refuelOneInch]: '0x0C0858290b6b268a93fB557af06390A3460c5dB6',
+    [Middleware.refuel]: '0x0Aa26a14C2559319F9dEf7304E93db5aE6b32fb9',
     routeIds: {
-      [constants.bridges.AnySwapRouterV4]: {
+      [Bridge.AnySwapRouterV4]: {
         routeId: 1,
         isMiddleware: false,
       },
-      [constants.middleware.OneInch]: {
+      [Middleware.OneInch]: {
         routeId: 3,
         isMiddleware: true,
       },
-      [constants.bridges.Celer]: {
+      [Bridge.Celer]: {
         routeId: 11,
         isMiddleware: false,
       },
-      [constants.bridges.Hyphen]: {
+      [Bridge.Hyphen]: {
         routeId: 6,
         isMiddleware: false,
       },
-      [constants.bridges.refuel]: {
+      [Bridge.refuel]: {
         routeId: 8,
         isMiddleware: false,
       },
-      [constants.middleware.refuelOneInch]: {
+      [Middleware.refuelOneInch]: {
         routeId: 9,
         isMiddleware: true,
       },
-      [constants.middleware.refuel]: {
+      [Middleware.refuel]: {
         routeId: 10,
         isMiddleware: true,
       },
@@ -132,38 +125,36 @@ export const addresses: { [chainId: number]: Address } = {
       isL1: false,
     },
   },
-  250: {
+  [ChainId.FANTOM_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
-    [constants.bridges.AnySwapRouterV4]:
-      '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
-    [constants.middleware.ZeroX]: '0xA7649aa944b7Dce781859C18913c2Dc8A97f03e4',
-    [constants.bridges.Celer]: '0x6086c6451217241D8e42e134733A542095E13c47',
-    [constants.bridges.refuel]: '0x1D6811553Aff8231aDd04A84F300b89E15D99EA4',
-    [constants.middleware.refuelZeroX]:
-      '0xBD9f6198a220046E944D704b7ff2A68b778F4A44',
-    [constants.middleware.refuel]: '0xA7f7e4fE8E4cdDCD9969Bd3fbcFF67000CD7DE47',
+    [Bridge.AnySwapRouterV4]: '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
+    [Middleware.ZeroX]: '0xA7649aa944b7Dce781859C18913c2Dc8A97f03e4',
+    [Bridge.Celer]: '0x6086c6451217241D8e42e134733A542095E13c47',
+    [Bridge.refuel]: '0x1D6811553Aff8231aDd04A84F300b89E15D99EA4',
+    [Middleware.refuelZeroX]: '0xBD9f6198a220046E944D704b7ff2A68b778F4A44',
+    [Middleware.refuel]: '0xA7f7e4fE8E4cdDCD9969Bd3fbcFF67000CD7DE47',
     routeIds: {
-      [constants.bridges.AnySwapRouterV4]: {
+      [Bridge.AnySwapRouterV4]: {
         routeId: 1,
         isMiddleware: false,
       },
-      [constants.middleware.ZeroX]: {
+      [Middleware.ZeroX]: {
         routeId: 3,
         isMiddleware: true,
       },
-      [constants.bridges.Celer]: {
+      [Bridge.Celer]: {
         routeId: 9,
         isMiddleware: false,
       },
-      [constants.bridges.refuel]: {
+      [Bridge.refuel]: {
         routeId: 6,
         isMiddleware: false,
       },
-      [constants.middleware.refuelZeroX]: {
+      [Middleware.refuelZeroX]: {
         routeId: 7,
         isMiddleware: true,
       },
-      [constants.middleware.refuel]: {
+      [Middleware.refuel]: {
         routeId: 8,
         isMiddleware: true,
       },
@@ -174,44 +165,41 @@ export const addresses: { [chainId: number]: Address } = {
       isL1: false,
     },
   },
-  43114: {
+  [ChainId.AVAX_CHAIN_ID]: {
     registry: '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
-    [constants.bridges.AnySwapRouterV4]:
-      '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
-    [constants.bridges.Hyphen]: '0xBD9f6198a220046E944D704b7ff2A68b778F4A44',
-    [constants.middleware.OneInch]:
-      '0xbDf50eAe568ECef74796ed6022a0d453e8432410',
-    [constants.bridges.Celer]: '0x9ca48cAF8AD2B081a0b633d6FCD803076F719fEa',
-    [constants.bridges.refuel]: '0xDC23842d47b80D88A549777eB1F33C2F47f253D0',
-    [constants.middleware.refuelOneInch]:
-      '0x6086c6451217241D8e42e134733A542095E13c47',
-    [constants.middleware.refuel]: '0x957301825Dc21d4A92919C9E72dC9E6C6a29e7f8',
+    [Bridge.AnySwapRouterV4]: '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
+    [Bridge.Hyphen]: '0xBD9f6198a220046E944D704b7ff2A68b778F4A44',
+    [Middleware.OneInch]: '0xbDf50eAe568ECef74796ed6022a0d453e8432410',
+    [Bridge.Celer]: '0x9ca48cAF8AD2B081a0b633d6FCD803076F719fEa',
+    [Bridge.refuel]: '0xDC23842d47b80D88A549777eB1F33C2F47f253D0',
+    [Middleware.refuelOneInch]: '0x6086c6451217241D8e42e134733A542095E13c47',
+    [Middleware.refuel]: '0x957301825Dc21d4A92919C9E72dC9E6C6a29e7f8',
     routeIds: {
-      [constants.bridges.AnySwapRouterV4]: {
+      [Bridge.AnySwapRouterV4]: {
         routeId: 1,
         isMiddleware: false,
       },
-      [constants.bridges.Hyphen]: {
+      [Bridge.Hyphen]: {
         routeId: 6,
         isMiddleware: false,
       },
-      [constants.middleware.OneInch]: {
+      [Middleware.OneInch]: {
         routeId: 3,
         isMiddleware: true,
       },
-      [constants.bridges.Celer]: {
+      [Bridge.Celer]: {
         routeId: 11,
         isMiddleware: false,
       },
-      [constants.bridges.refuel]: {
+      [Bridge.refuel]: {
         routeId: 8,
         isMiddleware: false,
       },
-      [constants.middleware.refuelOneInch]: {
+      [Middleware.refuelOneInch]: {
         routeId: 9,
         isMiddleware: true,
       },
-      [constants.middleware.refuel]: {
+      [Middleware.refuel]: {
         routeId: 10,
         isMiddleware: true,
       },
@@ -222,44 +210,42 @@ export const addresses: { [chainId: number]: Address } = {
       isL1: false,
     },
   },
-  10: {
+  [ChainId.OPTIMISM_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
-    [constants.bridges.Hop]: '0xaa3d9fA3aB930aE635b001d00C612aa5b14d750e',
-    [constants.middleware.OneInch]:
-      '0xbDf50eAe568ECef74796ed6022a0d453e8432410',
-    [constants.bridges.Across]: '0xA7f7e4fE8E4cdDCD9969Bd3fbcFF67000CD7DE47',
-    [constants.bridges.Celer]: '0x0C0858290b6b268a93fB557af06390A3460c5dB6',
-    [constants.bridges.refuel]: '0x47E136cf4A96e1afa72e19022f9699Bbaa1BE60e',
-    [constants.middleware.refuelOneInch]:
-      '0x1d43076909Ca139BFaC4EbB7194518bE3638fc76',
-    [constants.middleware.refuel]: '0x0f933F6a58D885586d356d6677DC87995bdC1B51',
+    [Bridge.Hop]: '0xaa3d9fA3aB930aE635b001d00C612aa5b14d750e',
+    [Middleware.OneInch]: '0xbDf50eAe568ECef74796ed6022a0d453e8432410',
+    [Bridge.Across]: '0xA7f7e4fE8E4cdDCD9969Bd3fbcFF67000CD7DE47',
+    [Bridge.Celer]: '0x0C0858290b6b268a93fB557af06390A3460c5dB6',
+    [Bridge.refuel]: '0x47E136cf4A96e1afa72e19022f9699Bbaa1BE60e',
+    [Middleware.refuelOneInch]: '0x1d43076909Ca139BFaC4EbB7194518bE3638fc76',
+    [Middleware.refuel]: '0x0f933F6a58D885586d356d6677DC87995bdC1B51',
     routeIds: {
-      [constants.bridges.Hop]: {
+      [Bridge.Hop]: {
         routeId: 4,
         isMiddleware: false,
       },
-      [constants.middleware.OneInch]: {
+      [Middleware.OneInch]: {
         routeId: 3,
         isMiddleware: true,
       },
-      [constants.bridges.Across]: {
+      [Bridge.Across]: {
         routeId: 7,
         isMiddleware: false,
       },
-      [constants.bridges.Celer]: {
+      [Bridge.Celer]: {
         routeId: 13,
         isMiddleware: false,
       },
 
-      [constants.bridges.refuel]: {
+      [Bridge.refuel]: {
         routeId: 9,
         isMiddleware: false,
       },
-      [constants.middleware.refuelOneInch]: {
+      [Middleware.refuelOneInch]: {
         routeId: 10,
         isMiddleware: true,
       },
-      [constants.middleware.refuel]: {
+      [Middleware.refuel]: {
         routeId: 11,
         isMiddleware: true,
       },
@@ -270,49 +256,46 @@ export const addresses: { [chainId: number]: Address } = {
       isL1: false,
     },
   },
-  42161: {
+  [ChainId.ARBITRUM_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
-    [constants.bridges.Hop]: '0x040993fbF458b95871Cd2D73Ee2E09F4AF6d56bB',
-    [constants.bridges.AnySwapRouterV4]:
-      '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
-    [constants.middleware.OneInch]:
-      '0xaa3d9fA3aB930aE635b001d00C612aa5b14d750e',
-    [constants.bridges.Across]: '0x0C0858290b6b268a93fB557af06390A3460c5dB6',
-    [constants.bridges.Celer]: '0x9216253925d1A22CB375EcEf4f33cf93a1D1ff4D',
-    [constants.bridges.refuel]: '0x7340798B75185849440c11FE09C5E6b494344F5C',
-    [constants.middleware.refuelOneInch]:
-      '0xdcABb6d7E88396498FFF4CD987F60e354BF2a44b',
-    [constants.middleware.refuel]: '0x23ddd3beC944cdB16Cacf3039e389324Df598B89',
+    [Bridge.Hop]: '0x040993fbF458b95871Cd2D73Ee2E09F4AF6d56bB',
+    [Bridge.AnySwapRouterV4]: '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
+    [Middleware.OneInch]: '0xaa3d9fA3aB930aE635b001d00C612aa5b14d750e',
+    [Bridge.Across]: '0x0C0858290b6b268a93fB557af06390A3460c5dB6',
+    [Bridge.Celer]: '0x9216253925d1A22CB375EcEf4f33cf93a1D1ff4D',
+    [Bridge.refuel]: '0x7340798B75185849440c11FE09C5E6b494344F5C',
+    [Middleware.refuelOneInch]: '0xdcABb6d7E88396498FFF4CD987F60e354BF2a44b',
+    [Middleware.refuel]: '0x23ddd3beC944cdB16Cacf3039e389324Df598B89',
     routeIds: {
-      [constants.bridges.Hop]: {
+      [Bridge.Hop]: {
         routeId: 5,
         isMiddleware: false,
       },
-      [constants.bridges.AnySwapRouterV4]: {
+      [Bridge.AnySwapRouterV4]: {
         routeId: 2,
         isMiddleware: false,
       },
-      [constants.middleware.OneInch]: {
+      [Middleware.OneInch]: {
         routeId: 4,
         isMiddleware: true,
       },
-      [constants.bridges.Across]: {
+      [Bridge.Across]: {
         routeId: 8,
         isMiddleware: false,
       },
-      [constants.bridges.Celer]: {
+      [Bridge.Celer]: {
         routeId: 14,
         isMiddleware: false,
       },
-      [constants.bridges.refuel]: {
+      [Bridge.refuel]: {
         routeId: 10,
         isMiddleware: false,
       },
-      [constants.middleware.refuelOneInch]: {
+      [Middleware.refuelOneInch]: {
         routeId: 11,
         isMiddleware: true,
       },
-      [constants.middleware.refuel]: {
+      [Middleware.refuel]: {
         routeId: 12,
         isMiddleware: true,
       },
@@ -324,34 +307,32 @@ export const addresses: { [chainId: number]: Address } = {
     },
   },
 
-  100: {
+  [ChainId.XDAI_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
-    [constants.bridges.Hop]: '0x852C5DE08b9beB014caD171C16B12a8D7456ea3f',
-    [constants.middleware.OneInch]:
-      '0x565810cbfa3Cf1390963E5aFa2fB953795686339',
-    [constants.bridges.refuel]: '0x7050b6f947BA48508219Ac02EC152E9f198ADc5e',
-    [constants.middleware.refuelOneInch]:
-      '0x2a1094b6585b32FE33929cDdF7Ee3F5a1c1E163A',
-    [constants.middleware.refuel]: '0xD9e492C3899aC768F67aD9AdC0Ce88aAB5463f60',
+    [Bridge.Hop]: '0x852C5DE08b9beB014caD171C16B12a8D7456ea3f',
+    [Middleware.OneInch]: '0x565810cbfa3Cf1390963E5aFa2fB953795686339',
+    [Bridge.refuel]: '0x7050b6f947BA48508219Ac02EC152E9f198ADc5e',
+    [Middleware.refuelOneInch]: '0x2a1094b6585b32FE33929cDdF7Ee3F5a1c1E163A',
+    [Middleware.refuel]: '0xD9e492C3899aC768F67aD9AdC0Ce88aAB5463f60',
     routeIds: {
-      [constants.bridges.Hop]: {
+      [Bridge.Hop]: {
         routeId: 4,
         isMiddleware: false,
       },
-      [constants.middleware.OneInch]: {
+      [Middleware.OneInch]: {
         routeId: 2,
         isMiddleware: true,
       },
 
-      [constants.bridges.refuel]: {
+      [Bridge.refuel]: {
         routeId: 5,
         isMiddleware: false,
       },
-      [constants.middleware.refuelOneInch]: {
+      [Middleware.refuelOneInch]: {
         routeId: 6,
         isMiddleware: true,
       },
-      [constants.middleware.refuel]: {
+      [Middleware.refuel]: {
         routeId: 7,
         isMiddleware: true,
       },
@@ -363,54 +344,51 @@ export const addresses: { [chainId: number]: Address } = {
     },
   },
 
-  137: {
+  [ChainId.POLYGON_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
-    [constants.bridges.Hop]: '0x03027410f25c527d5aeb3e6e56a6389611dcb2a9',
-    [constants.bridges.AnySwapRouterV4]:
-      '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
-    [constants.bridges.Hyphen]: '0x0fd9F11B9C54a9F100234EeEf9ee7873d73C2204',
-    [constants.bridges.Across]: '0xeb03440702bB6de23C63ad1c5A24598433F59F86',
-    [constants.middleware.OneInch]:
-      '0x2ddf16BA6d0180e5357d5e170eF1917a01b41fc0',
-    [constants.bridges.Celer]: '0xb48b743b85Bf955c4c039599A3eCdD6175B6787f',
-    [constants.bridges.refuel]: '0xcc3ef7f9df10a5f177c30becd4aaa33f42d5bd57',
-    [constants.middleware.refuelOneInch]:
-      '0x4C9faD010D8be90Aba505c85eacc483dFf9b8Fa9',
-    [constants.middleware.refuel]: '0x602029526b76c5116957aa360472b1141314ab7f',
+    [Bridge.Hop]: '0x03027410f25c527d5aeb3e6e56a6389611dcb2a9',
+    [Bridge.AnySwapRouterV4]: '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
+    [Bridge.Hyphen]: '0x0fd9F11B9C54a9F100234EeEf9ee7873d73C2204',
+    [Bridge.Across]: '0xeb03440702bB6de23C63ad1c5A24598433F59F86',
+    [Middleware.OneInch]: '0x2ddf16BA6d0180e5357d5e170eF1917a01b41fc0',
+    [Bridge.Celer]: '0xb48b743b85Bf955c4c039599A3eCdD6175B6787f',
+    [Bridge.refuel]: '0xcc3ef7f9df10a5f177c30becd4aaa33f42d5bd57',
+    [Middleware.refuelOneInch]: '0x4C9faD010D8be90Aba505c85eacc483dFf9b8Fa9',
+    [Middleware.refuel]: '0x602029526b76c5116957aa360472b1141314ab7f',
     routeIds: {
-      [constants.bridges.Hop]: {
+      [Bridge.Hop]: {
         routeId: 7,
         isMiddleware: false,
       },
-      [constants.bridges.AnySwapRouterV4]: {
+      [Bridge.AnySwapRouterV4]: {
         routeId: 2,
         isMiddleware: false,
       },
-      [constants.bridges.Hyphen]: {
+      [Bridge.Hyphen]: {
         routeId: 14,
         isMiddleware: false,
       },
-      [constants.middleware.OneInch]: {
+      [Middleware.OneInch]: {
         routeId: 5,
         isMiddleware: true,
       },
-      [constants.bridges.Celer]: {
+      [Bridge.Celer]: {
         routeId: 20,
         isMiddleware: false,
       },
-      [constants.bridges.refuel]: {
+      [Bridge.refuel]: {
         routeId: 10,
         isMiddleware: false,
       },
-      [constants.middleware.refuelOneInch]: {
+      [Middleware.refuelOneInch]: {
         routeId: 15,
         isMiddleware: true,
       },
-      [constants.middleware.refuel]: {
+      [Middleware.refuel]: {
         routeId: 18,
         isMiddleware: true,
       },
-      [constants.bridges.Across]: {
+      [Bridge.Across]: {
         routeId: 13,
         isMiddleware: false,
       },
@@ -422,21 +400,21 @@ export const addresses: { [chainId: number]: Address } = {
     },
   },
 
-  1313161554: {
+  [ChainId.AURORA_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
-    [constants.bridges.Celer]: '0xBD9f6198a220046E944D704b7ff2A68b778F4A44',
-    [constants.bridges.refuel]: '0xF51e426240E1C0b63dC7F7ec8b172376487329E3',
-    [constants.middleware.refuel]: '0x7050b6f947BA48508219Ac02EC152E9f198ADc5e',
+    [Bridge.Celer]: '0xBD9f6198a220046E944D704b7ff2A68b778F4A44',
+    [Bridge.refuel]: '0xF51e426240E1C0b63dC7F7ec8b172376487329E3',
+    [Middleware.refuel]: '0x7050b6f947BA48508219Ac02EC152E9f198ADc5e',
     routeIds: {
-      [constants.bridges.Celer]: {
+      [Bridge.Celer]: {
         routeId: 5,
         isMiddleware: false,
       },
-      [constants.bridges.refuel]: {
+      [Bridge.refuel]: {
         routeId: 3,
         isMiddleware: false,
       },
-      [constants.middleware.refuel]: {
+      [Middleware.refuel]: {
         routeId: 4,
         isMiddleware: true,
       },
@@ -447,4 +425,4 @@ export const addresses: { [chainId: number]: Address } = {
       isL1: false,
     },
   },
-}
+};
