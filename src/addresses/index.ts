@@ -5,7 +5,7 @@ export const addresses: {
 } = {
   [ChainId.MAINNET_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
-    [Bridge.Hop]: '0xd286595d2e3D879596FAB51f83A702D10a6db27b',
+    [Bridge.Hop]: '0x4C9faD010D8be90Aba505c85eacc483dFf9b8Fa9',
     [Bridge.PolygonBridge]: '0xa7649aa944b7dce781859c18913c2dc8a97f03e4',
     [Bridge.ArbitrumBridge]: '0x852C5DE08b9beB014caD171C16B12a8D7456ea3f',
     [Bridge.AnySwapRouterV4]: '0x040993fbF458b95871Cd2D73Ee2E09F4AF6d56bB',
@@ -20,7 +20,7 @@ export const addresses: {
 
     routeIds: {
       [Bridge.Hop]: {
-        routeId: 1,
+        routeId: 17,
         isMiddleware: false,
       },
       [Bridge.PolygonBridge]: {
@@ -212,16 +212,21 @@ export const addresses: {
   },
   [ChainId.OPTIMISM_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
-    [Bridge.Hop]: '0xaa3d9fA3aB930aE635b001d00C612aa5b14d750e',
+    [Bridge.Hop]: '0x0fd9F11B9C54a9F100234EeEf9ee7873d73C2204',
     [Middleware.OneInch]: '0xbDf50eAe568ECef74796ed6022a0d453e8432410',
     [Bridge.Across]: '0xA7f7e4fE8E4cdDCD9969Bd3fbcFF67000CD7DE47',
     [Bridge.Celer]: '0x0C0858290b6b268a93fB557af06390A3460c5dB6',
     [Bridge.refuel]: '0x47E136cf4A96e1afa72e19022f9699Bbaa1BE60e',
     [Middleware.refuelOneInch]: '0x1d43076909Ca139BFaC4EbB7194518bE3638fc76',
     [Middleware.refuel]: '0x0f933F6a58D885586d356d6677DC87995bdC1B51',
+    [Bridge.Hyphen]: '0xeb03440702bB6de23C63ad1c5A24598433F59F86',
     routeIds: {
       [Bridge.Hop]: {
-        routeId: 4,
+        routeId: 15,
+        isMiddleware: false,
+      },
+      [Bridge.Hyphen]: {
+        routeId: 14,
         isMiddleware: false,
       },
       [Middleware.OneInch]: {
@@ -258,17 +263,22 @@ export const addresses: {
   },
   [ChainId.ARBITRUM_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
-    [Bridge.Hop]: '0x040993fbF458b95871Cd2D73Ee2E09F4AF6d56bB',
+    [Bridge.Hop]: '0xa358d60b9Fd8d45A53baEAbd04c621c902572f3D',
     [Bridge.AnySwapRouterV4]: '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
     [Middleware.OneInch]: '0xaa3d9fA3aB930aE635b001d00C612aa5b14d750e',
     [Bridge.Across]: '0x0C0858290b6b268a93fB557af06390A3460c5dB6',
     [Bridge.Celer]: '0x9216253925d1A22CB375EcEf4f33cf93a1D1ff4D',
+    [Bridge.Hyphen]: '0xF45Ec13167E8C03490d44fE780609c6209c25c81',
     [Bridge.refuel]: '0x7340798B75185849440c11FE09C5E6b494344F5C',
     [Middleware.refuelOneInch]: '0xdcABb6d7E88396498FFF4CD987F60e354BF2a44b',
     [Middleware.refuel]: '0x23ddd3beC944cdB16Cacf3039e389324Df598B89',
     routeIds: {
       [Bridge.Hop]: {
-        routeId: 5,
+        routeId: 16,
+        isMiddleware: false,
+      },
+      [Bridge.Hyphen]: {
+        roueId: 15,
         isMiddleware: false,
       },
       [Bridge.AnySwapRouterV4]: {
@@ -309,14 +319,14 @@ export const addresses: {
 
   [ChainId.XDAI_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
-    [Bridge.Hop]: '0x852C5DE08b9beB014caD171C16B12a8D7456ea3f',
+    [Bridge.Hop]: '0xAC313d7491910516E06FBfC2A0b5BB49bb072D91',
     [Middleware.OneInch]: '0x565810cbfa3Cf1390963E5aFa2fB953795686339',
     [Bridge.refuel]: '0x7050b6f947BA48508219Ac02EC152E9f198ADc5e',
     [Middleware.refuelOneInch]: '0x2a1094b6585b32FE33929cDdF7Ee3F5a1c1E163A',
     [Middleware.refuel]: '0xD9e492C3899aC768F67aD9AdC0Ce88aAB5463f60',
     routeIds: {
       [Bridge.Hop]: {
-        routeId: 4,
+        routeId: 8,
         isMiddleware: false,
       },
       [Middleware.OneInch]: {
@@ -346,7 +356,7 @@ export const addresses: {
 
   [ChainId.POLYGON_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
-    [Bridge.Hop]: '0x03027410f25c527d5aeb3e6e56a6389611dcb2a9',
+    [Bridge.Hop]: '0xa3f9a7a13055f37479Ebc28E57C005F5c9A31F68',
     [Bridge.AnySwapRouterV4]: '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
     [Bridge.Hyphen]: '0x0fd9F11B9C54a9F100234EeEf9ee7873d73C2204',
     [Bridge.Across]: '0xeb03440702bB6de23C63ad1c5A24598433F59F86',
@@ -357,7 +367,7 @@ export const addresses: {
     [Middleware.refuel]: '0x602029526b76c5116957aa360472b1141314ab7f',
     routeIds: {
       [Bridge.Hop]: {
-        routeId: 7,
+        routeId: 21,
         isMiddleware: false,
       },
       [Bridge.AnySwapRouterV4]: {
