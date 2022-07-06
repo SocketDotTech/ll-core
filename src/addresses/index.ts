@@ -278,7 +278,7 @@ export const addresses: {
         isMiddleware: false,
       },
       [Bridge.Hyphen]: {
-        roueId: 15,
+        routeId: 15,
         isMiddleware: false,
       },
       [Bridge.AnySwapRouterV4]: {
