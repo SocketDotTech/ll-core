@@ -20,7 +20,7 @@ export const addresses: {
 
     routeIds: {
       [Bridge.Hop]: {
-        routeId: 17,
+        routeId: 18,
         isMiddleware: false,
       },
       [Bridge.PolygonBridge]: {
