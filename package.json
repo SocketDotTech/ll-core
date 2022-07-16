@@ -4,12 +4,15 @@
   "description": "Core package for socket liquidity layer",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "tsc --watch",
-    "build": "npm run build:ts",
-    "build:ts": "tsc",
+    "build": "tsc",
     "lint": "prettier-standard --format '**/*.{ts}'",
-    "publish": "npm run build && npm publish --access public",
+    "bump": "npm version patch",
+    "bump:next": "npm version prerelease --preid=next",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -26,10 +29,5 @@
     "plugins": [
       "@typescript-eslint/eslint-plugin"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm run lint"
-    }
   }
 }
