@@ -12,7 +12,7 @@ export const addresses: {
     [Bridge.Hyphen]: '0x1Aba89fC7ff67D27ccaa51893c46FD1e5fEE924B',
     [Bridge.Across]: '0x6D1e0220914f4fb73aF954694564e77024de3693',
     [Middleware.OneInch]: '0x2ddf16BA6d0180e5357d5e170eF1917a01b41fc0',
-    [Bridge.OptimismBridge]: '0x19609EeE157BC38E1A40E19c38218fC3900d97ac',
+    [Bridge.OptimismBridge]: '0x14aC5b3580dD1e546CD7287Cd1faDba9A8736628',
     [Bridge.Celer]: '0xB6fb3062405985F700fa23758A3053162ddBeFb9',
     [Bridge.refuel]: '0xe48AE3B68f0560d4aaA312E12fD687630C948561',
     [Middleware.refuelOneInch]: '0x87225Ec2C6d8ee8293E8F5667077d699eC2FB6Db',
@@ -44,7 +44,7 @@ export const addresses: {
         isMiddleware: true,
       },
       [Bridge.OptimismBridge]: {
-        routeId: 19,
+        routeId: 20,
         isMiddleware: false,
       },
       [Bridge.Celer]: {
