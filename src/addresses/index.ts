@@ -153,6 +153,9 @@ export const addresses: {
     [Bridge.refuel]: '0x1D6811553Aff8231aDd04A84F300b89E15D99EA4',
     [Middleware.refuelZeroX]: '0xBD9f6198a220046E944D704b7ff2A68b778F4A44',
     [Middleware.refuel]: '0xA7f7e4fE8E4cdDCD9969Bd3fbcFF67000CD7DE47',
+    [Middleware.OneInch]: '0x957301825Dc21d4A92919C9E72dC9E6C6a29e7f8',
+    [Middleware.refuelOneInch]: '0x17A89B7372866a0155bF14980973Ad4408A3145C',
+
     routeIds: {
       [Bridge.AnySwapRouterV4]: {
         routeId: 1,
@@ -176,6 +179,14 @@ export const addresses: {
       },
       [Middleware.refuel]: {
         routeId: 8,
+        isMiddleware: true,
+      },
+      [Middleware.OneInch]: {
+        routeId: 10,
+        isMiddleware: true,
+      },
+      [Middleware.refuelOneInch]: {
+        routeId: 11,
         isMiddleware: true,
       },
     },
@@ -465,6 +476,9 @@ export const addresses: {
     [Bridge.Celer]: '0xBD9f6198a220046E944D704b7ff2A68b778F4A44',
     [Bridge.refuel]: '0xF51e426240E1C0b63dC7F7ec8b172376487329E3',
     [Middleware.refuel]: '0x7050b6f947BA48508219Ac02EC152E9f198ADc5e',
+    [Middleware.OneInch]: '0xDC23842d47b80D88A549777eB1F33C2F47f253D0',
+    [Middleware.refuelOneInch]: '0x6086c6451217241D8e42e134733A542095E13c47',
+
     routeIds: {
       [Bridge.Celer]: {
         routeId: 5,
@@ -476,6 +490,14 @@ export const addresses: {
       },
       [Middleware.refuel]: {
         routeId: 4,
+        isMiddleware: true,
+      },
+      [Middleware.OneInch]: {
+        routeId: 6,
+        isMiddleware: true,
+      },
+      [Middleware.refuelOneInch]: {
+        routeId: 7,
         isMiddleware: true,
       },
     },
