@@ -418,6 +418,7 @@ export const addresses: {
     [Middleware.refuel]: '0x602029526b76c5116957aa360472b1141314ab7f',
     [Middleware.ZeroX]: '0xAE3dd4C0E3cA6823Cdbe9641B1938551cCb25a2d',
     [Middleware.refuelZeroX]: '0x3694Ab37011764fA64A648C2d5d6aC0E9cD5F98e',
+    feeRouter: '0x9bdD4AB882778491Feb34D856A11cA3310ba5283',
     routeIds: {
       [Bridge.Hop]: {
         routeId: 21,
