@@ -20,6 +20,8 @@ export const addresses: {
     [Middleware.refuel]: '0xa1Cc84A788A8405369E49781Ca151bDeDbB5b47C',
     [Middleware.ZeroX]: '0x33BE2a7CF4Bb94d28131116F840d313Cab1eD2DA',
     [Middleware.refuelZeroX]: '0x201c8d3AC4C261690e7C42A26bA49e614585c0D1',
+    [Middleware.Rainbow]: '0x7d3C52110E391D1a227A26736c0B3f3f19cc60f8',
+    [Middleware.refuelRainbow]: '0x0df5AfFC28FF314FEF2Ba82d8C44685A460EF538',
 
     routeIds: {
       [Bridge.Hop]: {
@@ -76,6 +78,14 @@ export const addresses: {
       },
       [Middleware.refuelZeroX]: {
         routeId: 22,
+        isMiddleware: true,
+      },
+      [Middleware.Rainbow]: {
+        routeId: 24,
+        isMiddleware: true,
+      },
+      [Middleware.refuelRainbow]: {
+        routeId: 23,
         isMiddleware: true,
       }
     },
@@ -268,6 +278,8 @@ export const addresses: {
     [Bridge.Hyphen]: '0xeb03440702bB6de23C63ad1c5A24598433F59F86',
     [Middleware.ZeroX]: '0x2d7F2B4CEe097F08ed8d30D928A40eB1379071Fe',
     [Middleware.refuelZeroX]: '0x029057DF831CCE19fc7adBb8D7283afCBB9d88D0',
+    [Middleware.Rainbow]: '0x3EC389511AF4AF02C9F3723C0fdEB105d1cC5A9C',
+    [Middleware.refuelRainbow]: '0x387bcEE789A50b42EDa6AebC55B7505183ae56f0',
     routeIds: {
       [Bridge.Hop]: {
         routeId: 15,
@@ -309,7 +321,15 @@ export const addresses: {
       [Middleware.refuelZeroX]: { 
         routeId: 17,
         isMiddleware: true,
-      }
+      },
+      [Middleware.Rainbow]: {
+        routeId: 19,
+        isMiddleware: true,
+      },
+      [Middleware.refuelRainbow]: {
+        routeId: 18,
+        isMiddleware: true,
+      },
     },
     chainInfo: {
       chainId: 10,
@@ -329,6 +349,8 @@ export const addresses: {
     [Bridge.refuel]: '0x7340798B75185849440c11FE09C5E6b494344F5C',
     [Middleware.refuelOneInch]: '0xdcABb6d7E88396498FFF4CD987F60e354BF2a44b',
     [Middleware.refuel]: '0x23ddd3beC944cdB16Cacf3039e389324Df598B89',
+    [Middleware.Rainbow]: '0x5837B68a8560bA2087006BcF69BB6Ef022005Cf4',
+    [Middleware.refuelRainbow]: '0xeb59a4D442Ab0Db5d18631FA51E7dBC351506302',
     routeIds: {
       [Bridge.Hop]: {
         routeId: 16,
@@ -364,6 +386,14 @@ export const addresses: {
       },
       [Middleware.refuel]: {
         routeId: 12,
+        isMiddleware: true,
+      },
+      [Middleware.Rainbow]: {
+        routeId: 18,
+        isMiddleware: true,
+      },
+      [Middleware.refuelRainbow]: {
+        routeId: 17,
         isMiddleware: true,
       },
     },
@@ -426,6 +456,8 @@ export const addresses: {
     [Middleware.refuel]: '0x602029526b76c5116957aa360472b1141314ab7f',
     [Middleware.ZeroX]: '0xAE3dd4C0E3cA6823Cdbe9641B1938551cCb25a2d',
     [Middleware.refuelZeroX]: '0x3694Ab37011764fA64A648C2d5d6aC0E9cD5F98e',
+    [Middleware.Rainbow]: '0xc0ab6E988fe7ba442D17A36d35723A6686f61386',
+    [Middleware.refuelRainbow]: '0x7926f34d7ad2379c89c5459959254ab2fffeb3fc',
     routeIds: {
       [Bridge.Hop]: {
         routeId: 21,
@@ -469,6 +501,14 @@ export const addresses: {
       },
       [Middleware.refuelZeroX]: { 
         routeId: 24,
+        isMiddleware: true,
+      },
+      [Middleware.Rainbow]: { 
+        routeId: 26,
+        isMiddleware: true,
+      },
+      [Middleware.refuelRainbow]: { 
+        routeId: 25,
         isMiddleware: true,
       }
     },
