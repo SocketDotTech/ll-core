@@ -14,7 +14,9 @@ export enum Bridge {
 export enum Middleware {
   OneInch = "oneinch",
   ZeroX = "zerox",
+  Rainbow = 'rainbow',
   refuelOneInch = "refuel-oneinch",
+  refuelRainbow = "refuel-rainbow",
   refuelZeroX = "refuel-zerox",
   refuel = "refuel",
 }
