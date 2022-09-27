@@ -5,7 +5,7 @@ export const addresses: {
 } = {
   [ChainId.MAINNET_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
-    feeRouter: '0xfc5b37ba0f6a43fd67cdd7f30a2fc1df126a1027',
+    feeRouter: '0x5e2361cd711de7efe2a85045b643271a64262d40',
     [Bridge.Hop]: '0x4C9faD010D8be90Aba505c85eacc483dFf9b8Fa9',
     [Bridge.PolygonBridge]: '0xa7649aa944b7dce781859c18913c2dc8a97f03e4',
     [Bridge.ArbitrumBridge]: '0x852C5DE08b9beB014caD171C16B12a8D7456ea3f',
@@ -103,7 +103,7 @@ export const addresses: {
 
   [ChainId.BSC_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
-    feeRouter: '0x61dff4a2a75523767b52b0f6043a7aa96ea80846',
+    feeRouter: '0x3EC389511AF4AF02C9F3723C0fdEB105d1cC5A9C',
     [Bridge.AnySwapRouterV4]: '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
     [Middleware.OneInch]: '0xd286595d2e3D879596FAB51f83A702D10a6db27b',
     [Bridge.Celer]: '0x031c67Ee65e508E96c184Fc8D8559B50CedeBaa9',
@@ -159,7 +159,7 @@ export const addresses: {
   },
   [ChainId.FANTOM_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
-    feeRouter: '0x7b62099a45cEE01D1b103988c23c3da4A3E8da26',
+    feeRouter: '0x5adde24B6a11B86C23a4f61c236A8795BD4aa2bB',
     [Bridge.AnySwapRouterV4]: '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
     [Middleware.ZeroX]: '0xA7649aa944b7Dce781859C18913c2Dc8A97f03e4',
     [Bridge.Celer]: '0x6086c6451217241D8e42e134733A542095E13c47',
@@ -211,7 +211,7 @@ export const addresses: {
   },
   [ChainId.AVAX_CHAIN_ID]: {
     registry: '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
-    feeRouter: '0x9995A39465541a6179E22b300A782195779c056D',
+    feeRouter: '0xc0315627bc6404F40188D1FAE5a7151650DEdA10',
     [Bridge.AnySwapRouterV4]: '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
     [Bridge.Hyphen]: '0xBD9f6198a220046E944D704b7ff2A68b778F4A44',
     [Middleware.OneInch]: '0xbDf50eAe568ECef74796ed6022a0d453e8432410',
@@ -267,7 +267,7 @@ export const addresses: {
   },
   [ChainId.OPTIMISM_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
-    feeRouter: '0x61dFf4a2a75523767B52b0F6043a7AA96EA80846',
+    feeRouter: '0xE00D67F732E6ED1158553fDBE9C6a151d06bed6c',
     [Bridge.Hop]: '0x0fd9F11B9C54a9F100234EeEf9ee7873d73C2204',
     [Middleware.OneInch]: '0xbDf50eAe568ECef74796ed6022a0d453e8432410',
     [Bridge.Across]: '0xA7f7e4fE8E4cdDCD9969Bd3fbcFF67000CD7DE47',
@@ -339,7 +339,7 @@ export const addresses: {
   },
   [ChainId.ARBITRUM_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
-    feeRouter: '0x7E486DE56b18e0EBe156B9d264E3e933242EB5dF',
+    feeRouter: '0x8b14984de0ddD2e080d8679fEbE2f5c94B975aF8',
     [Bridge.Hop]: '0xa358d60b9Fd8d45A53baEAbd04c621c902572f3D',
     [Bridge.AnySwapRouterV4]: '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
     [Middleware.OneInch]: '0xaa3d9fA3aB930aE635b001d00C612aa5b14d750e',
@@ -406,7 +406,7 @@ export const addresses: {
 
   [ChainId.XDAI_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
-    feeRouter: '0x691d1fce26262674ef49b4ded168128939e8977f',
+    feeRouter: '0xFC5B37ba0f6A43fd67CdD7f30a2Fc1Df126A1027',
     [Bridge.Hop]: '0xAC313d7491910516E06FBfC2A0b5BB49bb072D91',
     [Middleware.OneInch]: '0x565810cbfa3Cf1390963E5aFa2fB953795686339',
     [Bridge.refuel]: '0x7050b6f947BA48508219Ac02EC152E9f198ADc5e',
@@ -444,7 +444,7 @@ export const addresses: {
 
   [ChainId.POLYGON_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
-    feeRouter: '0xae367776E1Fd427FceE64FaCfE43568691eA7Cdc',
+    feeRouter: '0xc9b6F5eEaBb099BBbFB130b78249E81f70EFc946',
     [Bridge.Hop]: '0xa3f9a7a13055f37479Ebc28E57C005F5c9A31F68',
     [Bridge.AnySwapRouterV4]: '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
     [Bridge.Hyphen]: '0x0fd9F11B9C54a9F100234EeEf9ee7873d73C2204',
@@ -521,7 +521,7 @@ export const addresses: {
 
   [ChainId.AURORA_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
-    feeRouter: '0x090E83668b7136075d3f76F7D6533B7256538667',
+    feeRouter: '0x6277cEe7746c382dBDEB1DeE57884EA79bD28E04',
     [Bridge.Celer]: '0xBD9f6198a220046E944D704b7ff2A68b778F4A44',
     [Bridge.refuel]: '0xF51e426240E1C0b63dC7F7ec8b172376487329E3',
     [Middleware.refuel]: '0x7050b6f947BA48508219Ac02EC152E9f198ADc5e',
