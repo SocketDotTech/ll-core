@@ -451,6 +451,7 @@ export const addresses: {
     [Bridge.Across]: '0xeb03440702bB6de23C63ad1c5A24598433F59F86',
     [Middleware.OneInch]: '0x2ddf16BA6d0180e5357d5e170eF1917a01b41fc0',
     [Bridge.Celer]: '0xb48b743b85Bf955c4c039599A3eCdD6175B6787f',
+    [Bridge.Stargate]: '0x7f6608b4648c925B36378F53BA80397D38824e2D',
     [Bridge.refuel]: '0xcc3ef7f9df10a5f177c30becd4aaa33f42d5bd57',
     [Middleware.refuelOneInch]: '0x4C9faD010D8be90Aba505c85eacc483dFf9b8Fa9',
     [Middleware.refuel]: '0x602029526b76c5116957aa360472b1141314ab7f',
@@ -459,6 +460,10 @@ export const addresses: {
     [Middleware.Rainbow]: '0xc0ab6E988fe7ba442D17A36d35723A6686f61386',
     [Middleware.refuelRainbow]: '0x7926f34d7ad2379c89c5459959254ab2fffeb3fc',
     routeIds: {
+      [Bridge.Stargate]: {
+        routeId: 28,
+        isMiddleware: false,
+      },
       [Bridge.Hop]: {
         routeId: 21,
         isMiddleware: false,
