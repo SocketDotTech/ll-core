@@ -142,11 +142,11 @@ export const addresses: {
         routeId: 10,
         isMiddleware: true,
       },
-      [Middleware.ZeroX]: { 
+      [Middleware.ZeroX]: {
         routeId: 12,
         isMiddleware: true,
       },
-      [Middleware.refuelZeroX]: { 
+      [Middleware.refuelZeroX]: {
         routeId: 13,
         isMiddleware: true,
       }
@@ -164,12 +164,17 @@ export const addresses: {
     [Middleware.ZeroX]: '0xA7649aa944b7Dce781859C18913c2Dc8A97f03e4',
     [Bridge.Celer]: '0x6086c6451217241D8e42e134733A542095E13c47',
     [Bridge.refuel]: '0x1D6811553Aff8231aDd04A84F300b89E15D99EA4',
+    [Bridge.Hyphen]: '0x4732133E7440E70ED05d759045299Bb162384E43',
     [Middleware.refuelZeroX]: '0xBD9f6198a220046E944D704b7ff2A68b778F4A44',
     [Middleware.refuel]: '0xA7f7e4fE8E4cdDCD9969Bd3fbcFF67000CD7DE47',
     [Middleware.OneInch]: '0x957301825Dc21d4A92919C9E72dC9E6C6a29e7f8',
     [Middleware.refuelOneInch]: '0x17A89B7372866a0155bF14980973Ad4408A3145C',
 
     routeIds: {
+      [Bridge.Hyphen]: {
+        routeId: 12,
+        isMiddleware: false,
+      },
       [Bridge.AnySwapRouterV4]: {
         routeId: 1,
         isMiddleware: false,
@@ -250,11 +255,11 @@ export const addresses: {
         routeId: 10,
         isMiddleware: true,
       },
-      [Middleware.ZeroX]: { 
+      [Middleware.ZeroX]: {
         routeId: 12,
         isMiddleware: true,
       },
-      [Middleware.refuelZeroX]: { 
+      [Middleware.refuelZeroX]: {
         routeId: 13,
         isMiddleware: true,
       }
@@ -314,11 +319,11 @@ export const addresses: {
         routeId: 11,
         isMiddleware: true,
       },
-      [Middleware.ZeroX]: { 
+      [Middleware.ZeroX]: {
         routeId: 16,
         isMiddleware: true,
       },
-      [Middleware.refuelZeroX]: { 
+      [Middleware.refuelZeroX]: {
         routeId: 17,
         isMiddleware: true,
       },
@@ -500,19 +505,19 @@ export const addresses: {
         routeId: 13,
         isMiddleware: false,
       },
-      [Middleware.ZeroX]: { 
+      [Middleware.ZeroX]: {
         routeId: 23,
         isMiddleware: true,
       },
-      [Middleware.refuelZeroX]: { 
+      [Middleware.refuelZeroX]: {
         routeId: 24,
         isMiddleware: true,
       },
-      [Middleware.Rainbow]: { 
+      [Middleware.Rainbow]: {
         routeId: 26,
         isMiddleware: true,
       },
-      [Middleware.refuelRainbow]: { 
+      [Middleware.refuelRainbow]: {
         routeId: 25,
         isMiddleware: true,
       }
