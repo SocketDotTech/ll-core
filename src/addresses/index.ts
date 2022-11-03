@@ -352,11 +352,16 @@ export const addresses: {
     [Bridge.Celer]: '0x9216253925d1A22CB375EcEf4f33cf93a1D1ff4D',
     [Bridge.Hyphen]: '0xF45Ec13167E8C03490d44fE780609c6209c25c81',
     [Bridge.refuel]: '0x7340798B75185849440c11FE09C5E6b494344F5C',
+    [Bridge.Stargate]: '0xBF839f4dfF854F7a363A033D57ec872dC8556693',
     [Middleware.refuelOneInch]: '0xdcABb6d7E88396498FFF4CD987F60e354BF2a44b',
     [Middleware.refuel]: '0x23ddd3beC944cdB16Cacf3039e389324Df598B89',
     [Middleware.Rainbow]: '0x5837B68a8560bA2087006BcF69BB6Ef022005Cf4',
     [Middleware.refuelRainbow]: '0xeb59a4D442Ab0Db5d18631FA51E7dBC351506302',
     routeIds: {
+      [Bridge.Stargate]: { 
+        routeId: 20,
+        isMiddleware: false,
+      },
       [Bridge.Hop]: {
         routeId: 16,
         isMiddleware: false,
@@ -456,7 +461,7 @@ export const addresses: {
     [Bridge.Across]: '0xeb03440702bB6de23C63ad1c5A24598433F59F86',
     [Middleware.OneInch]: '0x2ddf16BA6d0180e5357d5e170eF1917a01b41fc0',
     [Bridge.Celer]: '0xb48b743b85Bf955c4c039599A3eCdD6175B6787f',
-    [Bridge.Stargate]: '0x7f6608b4648c925B36378F53BA80397D38824e2D',
+    [Bridge.Stargate]: '0x148Eac4449B662ea681B6BDE003BcC0706c3229C',
     [Bridge.refuel]: '0xcc3ef7f9df10a5f177c30becd4aaa33f42d5bd57',
     [Middleware.refuelOneInch]: '0x4C9faD010D8be90Aba505c85eacc483dFf9b8Fa9',
     [Middleware.refuel]: '0x602029526b76c5116957aa360472b1141314ab7f',
@@ -466,7 +471,7 @@ export const addresses: {
     [Middleware.refuelRainbow]: '0x7926f34d7ad2379c89c5459959254ab2fffeb3fc',
     routeIds: {
       [Bridge.Stargate]: {
-        routeId: 28,
+        routeId: 29,
         isMiddleware: false,
       },
       [Bridge.Hop]: {
