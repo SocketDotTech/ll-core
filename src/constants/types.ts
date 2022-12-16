@@ -9,7 +9,7 @@ export enum Bridge {
   OptimismBridge = "optimism-bridge",
   Celer = "celer",
   refuel = "refuel-bridge",
-  Stargate = "stargate"
+  Stargate = "stargate",
 }
 
 export enum Middleware {
