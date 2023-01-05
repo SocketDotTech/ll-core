@@ -2,6 +2,7 @@ export enum Bridge {
   Hop = "hop",
   AnySwap = "anyswap",
   AnySwapRouterV4 = "anyswap-router-v4",
+  AnySwapRouterV6 = "anyswap-router-v6",
   PolygonBridge = "polygon-bridge",
   ArbitrumBridge = "arbitrum-bridge",
   Hyphen = "hyphen",
