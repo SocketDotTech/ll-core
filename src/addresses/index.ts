@@ -11,6 +11,7 @@ export const addresses: {
     [Bridge.PolygonBridge]: '0xa7649aa944b7dce781859c18913c2dc8a97f03e4',
     [Bridge.ArbitrumBridge]: '0x852C5DE08b9beB014caD171C16B12a8D7456ea3f',
     [Bridge.AnySwapRouterV4]: '0x040993fbF458b95871Cd2D73Ee2E09F4AF6d56bB',
+    [Bridge.AnySwapRouterV6]: '0x64D1a81a38e1A9A7Ae5b5F15C8870480ca10A76B',
     [Bridge.Hyphen]: '0x1Aba89fC7ff67D27ccaa51893c46FD1e5fEE924B',
     [Bridge.Across]: '0x6D1e0220914f4fb73aF954694564e77024de3693',
     [Middleware.OneInch]: '0x2ddf16BA6d0180e5357d5e170eF1917a01b41fc0',
@@ -26,6 +27,10 @@ export const addresses: {
     [Middleware.refuelRainbow]: '0x0df5AfFC28FF314FEF2Ba82d8C44685A460EF538',
 
     routeIds: {
+      [Bridge.AnySwapRouterV6]: {
+        routeId: 26,
+        isMiddleware: false,
+      },
       [Bridge.Stargate]: {
         routeId: 27,
         isMiddleware: false,
@@ -112,6 +117,7 @@ export const addresses: {
     feeRouter: '0x3EC389511AF4AF02C9F3723C0fdEB105d1cC5A9C',
     stargateReceiver: '0x71cF3E64E42bcAEC7485AF71571d7033E5b7dF93',
     [Bridge.AnySwapRouterV4]: '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
+    [Bridge.AnySwapRouterV6]: '0x91f9c44fE349D0C309E9463FA8e871A015041dE0',
     [Middleware.OneInch]: '0xd286595d2e3D879596FAB51f83A702D10a6db27b',
     [Bridge.Celer]: '0x031c67Ee65e508E96c184Fc8D8559B50CedeBaa9',
     [Bridge.Hyphen]: '0x663dc7E91157c58079f55C1BF5ee1BdB6401Ca7a',
@@ -122,6 +128,10 @@ export const addresses: {
     [Middleware.ZeroX]: '0x805696d6079ce9F347811f0Fe4D7e4c24C15dF5f',
     [Middleware.refuelZeroX]: '0xAAeB4b20521dDf5C8C90c2a39D3c28F224E08c52',
     routeIds: {
+      [Bridge.AnySwapRouterV6]: { 
+        routeId: 15,
+        isMiddleware: false,
+      },
       [Bridge.Stargate]: {
         routeId: 16,
         isMiddleware: false,
@@ -174,6 +184,7 @@ export const addresses: {
     feeRouter: '0x5adde24B6a11B86C23a4f61c236A8795BD4aa2bB',
     stargateReceiver: '0x24dE7b66673e6996a6677EC27c3678a32Ed5Bd15',
     [Bridge.AnySwapRouterV4]: '0x2b42AFFD4b7C14d9B7C2579229495c052672Ccd3',
+    [Bridge.AnySwapRouterV6]: '0xCc6effFD8972f3cea0E08107A578A4bf845F1724',
     [Middleware.ZeroX]: '0xA7649aa944b7Dce781859C18913c2Dc8A97f03e4',
     [Bridge.Celer]: '0x6086c6451217241D8e42e134733A542095E13c47',
     [Bridge.refuel]: '0x1D6811553Aff8231aDd04A84F300b89E15D99EA4',
@@ -185,6 +196,10 @@ export const addresses: {
     [Middleware.refuelOneInch]: '0x17A89B7372866a0155bF14980973Ad4408A3145C',
 
     routeIds: {
+      [Bridge.AnySwapRouterV6]: { 
+        routeId: 15,
+        isMiddleware: false,
+      },
       [Bridge.Stargate]: {
         routeId: 14,
         isMiddleware: false,
@@ -237,6 +252,7 @@ export const addresses: {
     feeRouter: '0xc0315627bc6404F40188D1FAE5a7151650DEdA10',
     stargateReceiver: '0x83b2cda6A33128324ee9cb2f0360bA8a42Cec2C6',
     [Bridge.AnySwapRouterV4]: '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
+    [Bridge.AnySwapRouterV6]: '0x9F13b2D1C01937Bc5df1D3f27213BaDC494d8476',
     [Bridge.Hyphen]: '0xBD9f6198a220046E944D704b7ff2A68b778F4A44',
     [Middleware.OneInch]: '0xbDf50eAe568ECef74796ed6022a0d453e8432410',
     [Bridge.Celer]: '0x9ca48cAF8AD2B081a0b633d6FCD803076F719fEa',
@@ -247,6 +263,10 @@ export const addresses: {
     [Middleware.ZeroX]: '0xdcABb6d7E88396498FFF4CD987F60e354BF2a44b',
     [Middleware.refuelZeroX]: '0x23ddd3beC944cdB16Cacf3039e389324Df598B89',
     routeIds: {
+      [Bridge.AnySwapRouterV6]: { 
+        routeId: 15,
+        isMiddleware: false,
+      },
       [Bridge.Stargate]: {
         routeId: 16,
         isMiddleware: false,
@@ -299,6 +319,7 @@ export const addresses: {
     feeRouter: '0xE00D67F732E6ED1158553fDBE9C6a151d06bed6c',
     stargateReceiver: '0xddC3A2bc1D6252D09A82814269d602D84Ca3E7ae',
     [Bridge.Hop]: '0x0fd9F11B9C54a9F100234EeEf9ee7873d73C2204',
+    [Bridge.AnySwapRouterV6]: '0x85197bC6A4753829889Cf31193639f2429a80A46',
     [Middleware.OneInch]: '0xbDf50eAe568ECef74796ed6022a0d453e8432410',
     [Bridge.Across]: '0xA7f7e4fE8E4cdDCD9969Bd3fbcFF67000CD7DE47',
     [Bridge.Celer]: '0x0C0858290b6b268a93fB557af06390A3460c5dB6',
@@ -312,6 +333,10 @@ export const addresses: {
     [Middleware.Rainbow]: '0x3EC389511AF4AF02C9F3723C0fdEB105d1cC5A9C',
     [Middleware.refuelRainbow]: '0x387bcEE789A50b42EDa6AebC55B7505183ae56f0',
     routeIds: {
+      [Bridge.AnySwapRouterV6]: { 
+        routeId: 22,
+        isMiddleware: false,
+      },
       [Bridge.Stargate]: {
         routeId: 21,
         isMiddleware: false,
@@ -378,6 +403,7 @@ export const addresses: {
     stargateReceiver: '0x88616cB9499F32Ff6A784B66B60aABF0bCf0df39',
     [Bridge.Hop]: '0xa358d60b9Fd8d45A53baEAbd04c621c902572f3D',
     [Bridge.AnySwapRouterV4]: '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
+    [Bridge.AnySwapRouterV6]: '0x9F13b2D1C01937Bc5df1D3f27213BaDC494d8476',
     [Middleware.OneInch]: '0xaa3d9fA3aB930aE635b001d00C612aa5b14d750e',
     [Bridge.Across]: '0x0C0858290b6b268a93fB557af06390A3460c5dB6',
     [Bridge.Celer]: '0x9216253925d1A22CB375EcEf4f33cf93a1D1ff4D',
@@ -389,6 +415,10 @@ export const addresses: {
     [Middleware.Rainbow]: '0x5837B68a8560bA2087006BcF69BB6Ef022005Cf4',
     [Middleware.refuelRainbow]: '0xeb59a4D442Ab0Db5d18631FA51E7dBC351506302',
     routeIds: {
+      [Bridge.AnySwapRouterV6]: {
+        routeId: 22,
+        isMiddleware: false,
+       },
       [Bridge.Stargate]: { 
         routeId: 23,
         isMiddleware: false,
@@ -489,6 +519,7 @@ export const addresses: {
     stargateReceiver: '0x8DfeB2e0B392f0033C8685E35FB4763d88a70d12',
     [Bridge.Hop]: '0xa3f9a7a13055f37479Ebc28E57C005F5c9A31F68',
     [Bridge.AnySwapRouterV4]: '0x8537307810fC40F4073A12a38554D4Ff78EfFf41',
+    [Bridge.AnySwapRouterV6]: '0x6283790DBe68b674769E6288816C10B30370Af27',
     [Bridge.Hyphen]: '0x0fd9F11B9C54a9F100234EeEf9ee7873d73C2204',
     [Bridge.Across]: '0xeb03440702bB6de23C63ad1c5A24598433F59F86',
     [Middleware.OneInch]: '0x2ddf16BA6d0180e5357d5e170eF1917a01b41fc0',
@@ -502,6 +533,10 @@ export const addresses: {
     [Middleware.Rainbow]: '0xc0ab6E988fe7ba442D17A36d35723A6686f61386',
     [Middleware.refuelRainbow]: '0x7926f34d7ad2379c89c5459959254ab2fffeb3fc',
     routeIds: {
+      [Bridge.AnySwapRouterV6]: {
+        routeId: 31,
+        isMiddleware: false,
+      },
       [Bridge.Stargate]: {
         routeId: 30,
         isMiddleware: false,
