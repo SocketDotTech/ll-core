@@ -11,6 +11,7 @@ export enum Bridge {
   Celer = "celer",
   refuel = "refuel-bridge",
   Stargate = "stargate",
+  Connext = "connext",
 }
 
 export enum Middleware {

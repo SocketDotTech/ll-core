@@ -526,6 +526,7 @@ export const addresses: {
     [Bridge.Celer]: '0xb48b743b85Bf955c4c039599A3eCdD6175B6787f',
     [Bridge.Stargate]: '0xab0A709A5B73b907a0e35f268Cc9C292a94BdB82',
     [Bridge.refuel]: '0xcc3ef7f9df10a5f177c30becd4aaa33f42d5bd57',
+    [Bridge.Connext]: '0x696a6059F23321CEdA099731f4DDae2A3DeAEB11',
     [Middleware.refuelOneInch]: '0x4C9faD010D8be90Aba505c85eacc483dFf9b8Fa9',
     [Middleware.refuel]: '0x602029526b76c5116957aa360472b1141314ab7f',
     [Middleware.ZeroX]: '0xAE3dd4C0E3cA6823Cdbe9641B1938551cCb25a2d',
@@ -533,6 +534,10 @@ export const addresses: {
     [Middleware.Rainbow]: '0xc0ab6E988fe7ba442D17A36d35723A6686f61386',
     [Middleware.refuelRainbow]: '0x7926f34d7ad2379c89c5459959254ab2fffeb3fc',
     routeIds: {
+      [Bridge.Connext]: {
+        routeId: 32,
+        isMiddleware: false,
+      },
       [Bridge.AnySwapRouterV6]: {
         routeId: 31,
         isMiddleware: false,
