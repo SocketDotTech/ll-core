@@ -1,7 +1,7 @@
-import { ChainId, Bridge, Middleware } from '../constants/types';
-import { Address } from './type';
+import { ChainId, Bridge, Middleware } from '../constants/types'
+import { Address } from './type'
 export const addresses: {
-  [chainId: number]: Address;
+  [chainId: number]: Address
 } = {
   [ChainId.MAINNET_CHAIN_ID]: {
     registry: '0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0',
@@ -19,6 +19,7 @@ export const addresses: {
     [Bridge.Celer]: '0xB6fb3062405985F700fa23758A3053162ddBeFb9',
     [Bridge.refuel]: '0xe48AE3B68f0560d4aaA312E12fD687630C948561',
     [Bridge.Stargate]: '0x6cf8d2bf45fe99e369db145faf6fb606a50b27f3',
+    [Bridge.Connext]: '0x43D32673649800D8c697ce92b10cD5cd6dea55f8',
     [Middleware.refuelOneInch]: '0x87225Ec2C6d8ee8293E8F5667077d699eC2FB6Db',
     [Middleware.refuel]: '0xa1Cc84A788A8405369E49781Ca151bDeDbB5b47C',
     [Middleware.ZeroX]: '0x33BE2a7CF4Bb94d28131116F840d313Cab1eD2DA',
@@ -27,6 +28,10 @@ export const addresses: {
     [Middleware.refuelRainbow]: '0x0df5AfFC28FF314FEF2Ba82d8C44685A460EF538',
 
     routeIds: {
+      [Bridge.Connext]: {
+        routeId: 28,
+        isMiddleware: false,
+      },
       [Bridge.AnySwapRouterV6]: {
         routeId: 26,
         isMiddleware: false,
@@ -98,7 +103,7 @@ export const addresses: {
       [Middleware.refuelRainbow]: {
         routeId: 23,
         isMiddleware: true,
-      }
+      },
     },
     chainInfo: {
       chainId: 1,
@@ -123,12 +128,17 @@ export const addresses: {
     [Bridge.Hyphen]: '0x663dc7E91157c58079f55C1BF5ee1BdB6401Ca7a',
     [Bridge.refuel]: '0x807B2e8724cDf346c87EEFF4E309bbFCb8681eC1',
     [Bridge.Stargate]: '0x1747a20e940f37fE566f24600f0F2B6E50933C94',
+    [Bridge.Connext]: '0xDB4592E96275a9feE6134Dd940F3ae2D0D7d8292',
     [Middleware.refuelOneInch]: '0x0C0858290b6b268a93fB557af06390A3460c5dB6',
     [Middleware.refuel]: '0x0Aa26a14C2559319F9dEf7304E93db5aE6b32fb9',
     [Middleware.ZeroX]: '0x805696d6079ce9F347811f0Fe4D7e4c24C15dF5f',
     [Middleware.refuelZeroX]: '0xAAeB4b20521dDf5C8C90c2a39D3c28F224E08c52',
     routeIds: {
-      [Bridge.AnySwapRouterV6]: { 
+      [Bridge.Connext]: {
+        routeId: 17,
+        isMiddleware: false,
+      },
+      [Bridge.AnySwapRouterV6]: {
         routeId: 15,
         isMiddleware: false,
       },
@@ -171,7 +181,7 @@ export const addresses: {
       [Middleware.refuelZeroX]: {
         routeId: 13,
         isMiddleware: true,
-      }
+      },
     },
     chainInfo: {
       chainId: 56,
@@ -196,7 +206,7 @@ export const addresses: {
     [Middleware.refuelOneInch]: '0x17A89B7372866a0155bF14980973Ad4408A3145C',
 
     routeIds: {
-      [Bridge.AnySwapRouterV6]: { 
+      [Bridge.AnySwapRouterV6]: {
         routeId: 15,
         isMiddleware: false,
       },
@@ -263,7 +273,7 @@ export const addresses: {
     [Middleware.ZeroX]: '0xdcABb6d7E88396498FFF4CD987F60e354BF2a44b',
     [Middleware.refuelZeroX]: '0x23ddd3beC944cdB16Cacf3039e389324Df598B89',
     routeIds: {
-      [Bridge.AnySwapRouterV6]: { 
+      [Bridge.AnySwapRouterV6]: {
         routeId: 15,
         isMiddleware: false,
       },
@@ -306,7 +316,7 @@ export const addresses: {
       [Middleware.refuelZeroX]: {
         routeId: 13,
         isMiddleware: true,
-      }
+      },
     },
     chainInfo: {
       chainId: 43114,
@@ -339,7 +349,7 @@ export const addresses: {
         routeId: 23,
         isMiddleware: false,
       },
-      [Bridge.AnySwapRouterV6]: { 
+      [Bridge.AnySwapRouterV6]: {
         routeId: 22,
         isMiddleware: false,
       },
@@ -416,16 +426,21 @@ export const addresses: {
     [Bridge.Hyphen]: '0xF45Ec13167E8C03490d44fE780609c6209c25c81',
     [Bridge.refuel]: '0x7340798B75185849440c11FE09C5E6b494344F5C',
     [Bridge.Stargate]: '0xd7E23c91d00daF2017BdB96F57B69c56dc82C317',
+    [Bridge.Connext]: '0x6C0dF10c800B130c53c54a2e49B14fB20e829DB5',
     [Middleware.refuelOneInch]: '0xdcABb6d7E88396498FFF4CD987F60e354BF2a44b',
     [Middleware.refuel]: '0x23ddd3beC944cdB16Cacf3039e389324Df598B89',
     [Middleware.Rainbow]: '0x5837B68a8560bA2087006BcF69BB6Ef022005Cf4',
     [Middleware.refuelRainbow]: '0xeb59a4D442Ab0Db5d18631FA51E7dBC351506302',
     routeIds: {
+      [Bridge.Connext]: {
+        routeId: 24,
+        isMiddleware: false,
+      },
       [Bridge.AnySwapRouterV6]: {
         routeId: 22,
         isMiddleware: false,
-       },
-      [Bridge.Stargate]: { 
+      },
+      [Bridge.Stargate]: {
         routeId: 23,
         isMiddleware: false,
       },
@@ -487,9 +502,14 @@ export const addresses: {
     [Bridge.Hop]: '0xAC313d7491910516E06FBfC2A0b5BB49bb072D91',
     [Middleware.OneInch]: '0x565810cbfa3Cf1390963E5aFa2fB953795686339',
     [Bridge.refuel]: '0x7050b6f947BA48508219Ac02EC152E9f198ADc5e',
+    [Bridge.Connext]: '0xa96D6BD50F1836A3F8C79299E06A1e16A370E0C4',
     [Middleware.refuelOneInch]: '0x2a1094b6585b32FE33929cDdF7Ee3F5a1c1E163A',
     [Middleware.refuel]: '0xD9e492C3899aC768F67aD9AdC0Ce88aAB5463f60',
     routeIds: {
+      [Bridge.Connext]: {
+        routeId: 9,
+        isMiddleware: false,
+      },
       [Bridge.Hop]: {
         routeId: 8,
         isMiddleware: false,
@@ -603,7 +623,7 @@ export const addresses: {
       [Middleware.refuelRainbow]: {
         routeId: 25,
         isMiddleware: true,
-      }
+      },
     },
     chainInfo: {
       chainId: 137,
@@ -649,4 +669,4 @@ export const addresses: {
       isL1: false,
     },
   },
-};
+}
