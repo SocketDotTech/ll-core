@@ -12,6 +12,7 @@ export enum Bridge {
   refuel = "refuel-bridge",
   Stargate = "stargate",
   Connext = "connext",
+  CCTP = "cctp",
 }
 
 export enum Middleware {
