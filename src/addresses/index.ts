@@ -20,6 +20,7 @@ export const addresses: {
     [Bridge.refuel]: '0xe48AE3B68f0560d4aaA312E12fD687630C948561',
     [Bridge.Stargate]: '0x6cf8d2bf45fe99e369db145faf6fb606a50b27f3',
     [Bridge.Connext]: '0x43D32673649800D8c697ce92b10cD5cd6dea55f8',
+    [Bridge.CCTP]: '0x61603bBB585B88Ca34Ae5AcD5A094e4228c4EB48',
     [Middleware.refuelOneInch]: '0x87225Ec2C6d8ee8293E8F5667077d699eC2FB6Db',
     [Middleware.refuel]: '0xa1Cc84A788A8405369E49781Ca151bDeDbB5b47C',
     [Middleware.ZeroX]: '0x33BE2a7CF4Bb94d28131116F840d313Cab1eD2DA',
@@ -28,6 +29,10 @@ export const addresses: {
     [Middleware.refuelRainbow]: '0x0df5AfFC28FF314FEF2Ba82d8C44685A460EF538',
 
     routeIds: {
+      [Bridge.CCTP]: {
+        routeId: 29,
+        isMiddleware: false,
+      },
       [Bridge.Connext]: {
         routeId: 28,
         isMiddleware: false,
@@ -268,7 +273,7 @@ export const addresses: {
     [Bridge.Celer]: '0x9ca48cAF8AD2B081a0b633d6FCD803076F719fEa',
     [Bridge.refuel]: '0xDC23842d47b80D88A549777eB1F33C2F47f253D0',
     [Bridge.Stargate]: '0x1765b308001753901c7A676d0E1cCE5d03e18dd0',
-    [Bridge.CCTP]: '0x80589802C34858Fa9ae0C526bF8972D5fFc4d9DF',
+    [Bridge.CCTP]: '0xB6dD3804f43b55866B7eCC61970a6Dbf9906eB2f',
     [Middleware.refuelOneInch]: '0x6086c6451217241D8e42e134733A542095E13c47',
     [Middleware.refuel]: '0x957301825Dc21d4A92919C9E72dC9E6C6a29e7f8',
     [Middleware.ZeroX]: '0xdcABb6d7E88396498FFF4CD987F60e354BF2a44b',
@@ -283,7 +288,7 @@ export const addresses: {
         isMiddleware: false,
       },
       [Bridge.CCTP]: {
-        routeId: 17,
+        routeId: 18,
         isMiddleware: false,
       },
       [Bridge.AnySwapRouterV4]: {
