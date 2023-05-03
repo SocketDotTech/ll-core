@@ -5,3 +5,5 @@ export const constants = {
   middleware: Middleware,
   chains: ChainId,
 };
+
+export * from './types';
