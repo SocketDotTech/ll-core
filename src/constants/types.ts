@@ -13,6 +13,7 @@ export enum Bridge {
   Stargate = "stargate",
   Connext = "connext",
   CCTP = "cctp",
+  Synapse = "synapse"
 }
 
 export enum Middleware {
