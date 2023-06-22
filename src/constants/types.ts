@@ -16,27 +16,31 @@ export enum Bridge {
   Synapse = "synapse"
 }
 
-export enum Middleware {
+export enum DexNames {
   OneInch = "oneinch",
   ZeroX = "zerox",
-  Rainbow = 'rainbow',
-  refuelOneInch = "refuel-oneinch",
-  refuelRainbow = "refuel-rainbow",
-  refuelZeroX = "refuel-zerox",
+  Rainbow = 'rainbow'
+}
+export enum RefuelDexNames {
+  refuelOneInch = 'refuel-oneinch',
+  refuelZeroX = 'refuel-zerox',
+  refuelRainbow = 'refuel-rainbow',
+}
+export enum SimpleMiddleware {
   refuel = "refuel",
 }
 
+export const Middleware = {
+  ...SimpleMiddleware,
+  ...DexNames,
+  ...RefuelDexNames
+}
+export type Middleware = DexNames | RefuelDexNames | SimpleMiddleware
+
 export enum ChainId {
-  GOERLI_CHAIN_ID = 5,
-  KOVAN_CHAIN_ID = 42,
   POLYGON_CHAIN_ID = 137,
-  MUMBAI_CHAIN_ID = 80001,
   MAINNET_CHAIN_ID = 1,
-  RINKEBY_CHAIN_ID = 4,
-  ROPSTEN_CHAIN_ID = 3,
-  ARBITRUM_TESTNET_CHAIN_ID = 421611,
   XDAI_CHAIN_ID = 100,
-  SOKOL_CHAIN_ID = 77,
   ARBITRUM_CHAIN_ID = 42161,
   FANTOM_CHAIN_ID = 250,
   OPTIMISM_CHAIN_ID = 10,
