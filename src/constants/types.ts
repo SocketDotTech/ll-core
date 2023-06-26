@@ -13,7 +13,9 @@ export enum Bridge {
   Stargate = "stargate",
   Connext = "connext",
   CCTP = "cctp",
-  Synapse = "synapse"
+  Synapse = "synapse",
+  BaseBridge = 'base-bridge',
+  ZoraBridge =  'zora-bridge'
 }
 
 export enum DexNames {
