@@ -15,7 +15,8 @@ export enum Bridge {
   CCTP = "cctp",
   Synapse = "synapse",
   BaseBridge = 'base-bridge',
-  ZoraBridge =  'zora-bridge'
+  ZoraBridge =  'zora-bridge',
+  ZkSyncNative = "zksync-native"
 }
 
 export enum DexNames {
