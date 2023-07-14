@@ -436,11 +436,16 @@ export const addresses: {
     [Bridge.refuel]: '0x7340798B75185849440c11FE09C5E6b494344F5C',
     [Bridge.Stargate]: '0xd7E23c91d00daF2017BdB96F57B69c56dc82C317',
     [Bridge.Connext]: '0x6C0dF10c800B130c53c54a2e49B14fB20e829DB5',
+    [Bridge.CCTP]: '0x1a4f0075987f557ae59caf559dc7c98ee86a8d1f',
     [Middleware.refuelOneInch]: '0xdcABb6d7E88396498FFF4CD987F60e354BF2a44b',
     [Middleware.refuel]: '0x23ddd3beC944cdB16Cacf3039e389324Df598B89',
     [Middleware.Rainbow]: '0x5837B68a8560bA2087006BcF69BB6Ef022005Cf4',
     [Middleware.refuelRainbow]: '0xeb59a4D442Ab0Db5d18631FA51E7dBC351506302',
     routeIds: {
+      [Bridge.CCTP]: {
+        routeId: 25,
+        isMiddleware: false,
+      },
       [Bridge.Connext]: {
         routeId: 24,
         isMiddleware: false,
