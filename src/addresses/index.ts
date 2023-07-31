@@ -674,4 +674,15 @@ export const addresses: {
       isL1: false,
     },
   },
+  [ChainId.BASE_CHAIN_ID]: {
+    registry: "0x4BfE629847BC9d0d7A4fB4E423d9c1cAABAC5bc5",
+    feeRouter: "",
+    [Bridge.Hop]: "0x43AA68673e54e95E07e8388BDd8612Abe6Df6F81",
+    routeIds: {
+      [Bridge.Hop]: {
+        routeId: 385,
+        isMiddleware: false,
+      }
+    }
+  }
 }
