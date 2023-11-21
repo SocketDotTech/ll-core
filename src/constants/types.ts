@@ -17,7 +17,8 @@ export enum Bridge {
   BaseBridge = 'base-bridge',
   ZoraBridge =  'zora-bridge',
   ZkSyncNative = "zksync-native",
-  Symbiosis = "symbiosis"
+  Symbiosis = "symbiosis",
+  GnosisNative = "gnosis-native-bridge"
 }
 
 export enum DexNames {
