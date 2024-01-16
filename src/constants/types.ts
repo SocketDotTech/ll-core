@@ -18,7 +18,8 @@ export enum Bridge {
   ZoraBridge =  'zora-bridge',
   ZkSyncNative = "zksync-native",
   Symbiosis = "symbiosis",
-  GnosisNative = "gnosis-native-bridge"
+  GnosisNative = "gnosis-native-bridge",
+  Lyra = "lyra-bridge"
 }
 
 export enum DexNames {
@@ -56,5 +57,6 @@ export enum ChainId {
   ZKSYNC_ERA_CHAIN_ID = 324,
   ZORA_CHAIN_ID = 7777777,
   BASE_CHAIN_ID = 8453,
-  LINEA_CHAIN_ID = 59144
+  LINEA_CHAIN_ID = 59144,
+  LYRA_CHAIN_ID = 957
 }
