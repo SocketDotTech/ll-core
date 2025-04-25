@@ -24,11 +24,13 @@ export enum Bridge {
 
 export enum DexNames {
   OneInch = "oneinch",
+  Kyberswap = "kyberswap",
   ZeroX = "zerox",
   Rainbow = 'rainbow'
 }
 export enum RefuelDexNames {
   refuelOneInch = 'refuel-oneinch',
+  refuelKyberswap = 'refuel-kyberswap',
   refuelZeroX = 'refuel-zerox',
   refuelRainbow = 'refuel-rainbow',
 }
